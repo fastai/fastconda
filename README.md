@@ -8,7 +8,7 @@ Configure settings in [settings.ini](settings.ini).
 
 ### Step 2: Copy Anaconda Repos
 
-> ./get_deps.sh <python version number>
+> ./get_deps.sh {python version number}
 
 For example
 
