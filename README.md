@@ -12,7 +12,7 @@ Configure settings in [settings.ini](settings.ini).
 
 For example
 
-```shell
+```
 > ./get_deps.sh 3.7
 
 Copying dependencies for: sentencepiece transformers rich timm
