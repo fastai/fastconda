@@ -16,6 +16,8 @@ For example
 > ./get_deps.sh 3.7
 
 Copying dependencies for: sentencepiece transformers rich timm
+Channels searched: -c defaults -c conda-forge
+Python version: 3.7
 Logs available in: dep_data/logs-tmp-3.7.txt
 Dependency metadata available in: dep_data/inst-3.7.json
 
