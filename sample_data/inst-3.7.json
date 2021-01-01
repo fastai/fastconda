@@ -1,0 +1,1339 @@
+
+                  __    __    __    __
+                 /  \  /  \  /  \  /  \
+                /    \/    \/    \/    \
+███████████████/  /██/  /██/  /██/  /████████████████████████
+              /  / \   / \   / \   / \  \____
+             /  /   \_/   \_/   \_/   \    o \__,
+            / _/                       \_____/  `
+            |/
+        ███╗   ███╗ █████╗ ███╗   ███╗██████╗  █████╗
+        ████╗ ████║██╔══██╗████╗ ████║██╔══██╗██╔══██╗
+        ██╔████╔██║███████║██╔████╔██║██████╔╝███████║
+        ██║╚██╔╝██║██╔══██║██║╚██╔╝██║██╔══██╗██╔══██║
+        ██║ ╚═╝ ██║██║  ██║██║ ╚═╝ ██║██████╔╝██║  ██║
+        ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═════╝ ╚═╝  ╚═╝
+
+        Supported by @QuantStack
+
+        GitHub:  https://github.com/QuantStack/mamba
+        Twitter: https://twitter.com/QuantStack
+
+█████████████████████████████████████████████████████████████
+
+Getting  pkgs/main linux-64
+Getting  pkgs/main noarch
+Getting  pkgs/r linux-64
+Getting  pkgs/r noarch
+Getting  conda-forge linux-64
+Getting  conda-forge noarch
+Getting  fastai linux-64
+Getting  fastai noarch
+Getting  pytorch linux-64
+Getting  pytorch noarch
+
+Looking for: ['sentencepiece', 'transformers', 'rich', 'timm', 'python 3.7.0']
+
+{
+  "actions": {
+    "FETCH": [
+      {
+        "build": "h5a2b251_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "libgcc-ng >=7.3.0",
+          "libgfortran-ng >=7,<8.0a0"
+        ],
+        "fn": "libopenblas-0.3.10-h5a2b251_0.conda",
+        "license": "BSD",
+        "md5": "fdcbc234f3566dc863de99a2d59eada3",
+        "name": "libopenblas",
+        "sha256": "82a338990c5b3b3d1569f6710ba29cd5409be9dd2174c0151c7160451ccc11b9",
+        "size": 4764435,
+        "subdir": "linux-64",
+        "timestamp": 1594191939436,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/libopenblas-0.3.10-h5a2b251_0.conda",
+        "version": "0.3.10"
+      },
+      {
+        "build": "py_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+        "constrains": [],
+        "depends": [
+          "future >=0.14.0",
+          "python"
+        ],
+        "fn": "commonmark-0.9.1-py_0.conda",
+        "license": "BSD 3-Clause",
+        "license_family": "BSD",
+        "md5": "1098ab542359e8b358bf757b46079ee1",
+        "name": "commonmark",
+        "noarch": "python",
+        "package_type": "noarch_python",
+        "sha256": "2310a8841bdb66c3d2a2b6335476aaf7fe3f388d13c1af85e4787f84c0034cff",
+        "size": 50013,
+        "subdir": "noarch",
+        "timestamp": 1573962991426,
+        "url": "https://repo.anaconda.com/pkgs/main/noarch/commonmark-0.9.1-py_0.conda",
+        "version": "0.9.1"
+      },
+      {
+        "build": "pyhd8ed1ab_0",
+        "build_number": 0,
+        "channel": "https://conda.anaconda.org/conda-forge/noarch",
+        "constrains": [],
+        "depends": [
+          "python >=3.7",
+          "pytorch >=1.4",
+          "torchvision"
+        ],
+        "fn": "timm-0.3.2-pyhd8ed1ab_0.tar.bz2",
+        "license": "Apache-2.0",
+        "license_family": "APACHE",
+        "md5": "6ea6eee0b81cd0ac8302bab6c32e3fd8",
+        "name": "timm",
+        "noarch": "python",
+        "package_type": "noarch_python",
+        "sha256": "0591bd3db7dd719c413e4369450031d5862df9d9c8cac6108d3bdab603b835cb",
+        "size": 164158,
+        "subdir": "noarch",
+        "timestamp": 1607370376240,
+        "url": "https://conda.anaconda.org/conda-forge/noarch/timm-0.3.2-pyhd8ed1ab_0.tar.bz2",
+        "version": "0.3.2"
+      },
+      {
+        "arch": "x86_64",
+        "build": "py3.7_cuda10.1.243_cudnn7.6.3_0",
+        "build_number": 0,
+        "channel": "https://conda.anaconda.org/pytorch/linux-64",
+        "constrains": [],
+        "depends": [
+          "cudatoolkit >=10.1,<10.2",
+          "mkl >=2018",
+          "ninja",
+          "numpy >=1.11",
+          "python >=3.7,<3.8.0a0"
+        ],
+        "fn": "pytorch-1.4.0-py3.7_cuda10.1.243_cudnn7.6.3_0.tar.bz2",
+        "license": "BSD 3-Clause",
+        "license_family": "BSD",
+        "md5": "618de99beb365384e4fab753899e7369",
+        "name": "pytorch",
+        "platform": "linux",
+        "size": 453936110,
+        "subdir": "linux-64",
+        "timestamp": 1579026657048,
+        "url": "https://conda.anaconda.org/pytorch/linux-64/pytorch-1.4.0-py3.7_cuda10.1.243_cudnn7.6.3_0.tar.bz2",
+        "version": "1.4.0"
+      },
+      {
+        "build": "hdf63c60_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [],
+        "fn": "libgfortran-ng-7.3.0-hdf63c60_0.conda",
+        "license": "GPL",
+        "md5": "e3e10877b7ee2bdd3f67f6d4d4e32e00",
+        "name": "libgfortran-ng",
+        "sha256": "5fc07f818aca5df283f804026f991a4e5db2b2e29959def155e36ce9b9b26def",
+        "size": 1030197,
+        "subdir": "linux-64",
+        "timestamp": 1534628456385,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/libgfortran-ng-7.3.0-hdf63c60_0.conda",
+        "version": "7.3.0"
+      },
+      {
+        "build": "256",
+        "build_number": 256,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "intel-openmp"
+        ],
+        "fn": "mkl-2020.2-256.conda",
+        "license": "LicenseRef-ProprietaryIntel",
+        "license_family": "Proprietary",
+        "md5": "a73b6cbcdbcc8f4a10d5b46181f418bb",
+        "name": "mkl",
+        "sha256": "e8734ce44ebca78c43464ef1e0ecf89be67bf0e394be1a08572c6a3f3857a31a",
+        "size": 145052203,
+        "subdir": "linux-64",
+        "timestamp": 1598384580372,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/mkl-2020.2-256.conda",
+        "version": "2020.2"
+      },
+      {
+        "build": "h396b838_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "jpeg >=9b,<10a",
+          "libgcc-ng >=7.3.0",
+          "libtiff >=4.1.0,<5.0a0"
+        ],
+        "fn": "lcms2-2.11-h396b838_0.conda",
+        "license": "MIT",
+        "license_family": "MIT",
+        "md5": "9c4eab3aa7783b3c89ff1c2210b63df9",
+        "name": "lcms2",
+        "sha256": "184c1fb7fe015304786c5ba339aee187b5e34beb126e79c0f68ac35978f6190f",
+        "size": 314332,
+        "subdir": "linux-64",
+        "timestamp": 1593198336289,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/lcms2-2.11-h396b838_0.conda",
+        "version": "2.11"
+      },
+      {
+        "build": "h5ab3b9f_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "libgcc-ng >=7.3.0",
+          "libpng >=1.6.37,<1.7.0a0",
+          "zlib >=1.2.11,<1.3.0a0"
+        ],
+        "fn": "freetype-2.10.4-h5ab3b9f_0.conda",
+        "license": "GPL-2.0-only and LicenseRef-FreeType",
+        "md5": "bef0ea8b3abc9d84674733a3ca426865",
+        "name": "freetype",
+        "sha256": "ce30bd1542b38e7dc83180c54202b36597ef26a14fa4678f5a74ae540cdb2143",
+        "size": 610645,
+        "subdir": "linux-64",
+        "timestamp": 1603212964927,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/freetype-2.10.4-h5ab3b9f_0.conda",
+        "version": "2.10.4"
+      },
+      {
+        "build": "py37_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "python >=3.7,<3.8.0a0"
+        ],
+        "fn": "olefile-0.46-py37_0.conda",
+        "license": "BSD 2-Clause",
+        "license_family": "BSD",
+        "md5": "9a0c0faad20393a813e10c731325eadf",
+        "name": "olefile",
+        "sha256": "5fc9fea1b28873f503e5fbb5d12b3aa37a93d13a0919e1f268e196d2676d7c2c",
+        "size": 50707,
+        "subdir": "linux-64",
+        "timestamp": 1536697142672,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/olefile-0.46-py37_0.conda",
+        "version": "0.46"
+      },
+      {
+        "build": "pyhd8ed1ab_1",
+        "build_number": 1,
+        "channel": "https://conda.anaconda.org/conda-forge/noarch",
+        "constrains": [],
+        "depends": [
+          "dataclasses",
+          "filelock",
+          "numpy",
+          "packaging",
+          "python >=3.6",
+          "regex !=2019.12.17",
+          "requests",
+          "sacremoses",
+          "tokenizers 0.9.4",
+          "tqdm >=4.27"
+        ],
+        "fn": "transformers-4.1.1-pyhd8ed1ab_1.tar.bz2",
+        "license": "Apache-2.0",
+        "license_family": "APACHE",
+        "md5": "55bf6ee373b13f2464061b9cb2c6146c",
+        "name": "transformers",
+        "noarch": "python",
+        "package_type": "noarch_python",
+        "sha256": "b20c507edc45b6dcffc519ce84869a58ce7b2baceb5c94342c486e1ec7ac2b23",
+        "size": 804150,
+        "subdir": "noarch",
+        "timestamp": 1608366368287,
+        "url": "https://conda.anaconda.org/conda-forge/noarch/transformers-4.1.1-pyhd8ed1ab_1.tar.bz2",
+        "version": "4.1.1"
+      },
+      {
+        "build": "pyhd3eb1b0_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+        "constrains": [],
+        "depends": [
+          "python"
+        ],
+        "fn": "colorama-0.4.4-pyhd3eb1b0_0.conda",
+        "license": "BSD-3-Clause",
+        "md5": "f550604d18b83878f647a491b2b343d6",
+        "name": "colorama",
+        "noarch": "python",
+        "package_type": "noarch_python",
+        "sha256": "2224b228e6d511f11b6d76ed95107b4ea79f3d58939b8638b78485d205d38140",
+        "size": 21236,
+        "subdir": "noarch",
+        "timestamp": 1607707149014,
+        "url": "https://repo.anaconda.com/pkgs/main/noarch/colorama-0.4.4-pyhd3eb1b0_0.conda",
+        "version": "0.4.4"
+      },
+      {
+        "build": "py37h27cfd23_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "libgcc-ng >=7.3.0",
+          "python >=3.7,<3.8.0a0"
+        ],
+        "fn": "regex-2020.11.13-py37h27cfd23_0.conda",
+        "license": "Python-2.0",
+        "license_family": "PSF",
+        "md5": "e2dec06c2f05d69d2f84ddf0090e2649",
+        "name": "regex",
+        "sha256": "9f6d0f61a0d0281fe376e9068f0a8c567e543f44b6414684ce1b6ec59f06cb3a",
+        "size": 326483,
+        "subdir": "linux-64",
+        "timestamp": 1606772757964,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/regex-2020.11.13-py37h27cfd23_0.conda",
+        "version": "2020.11.13"
+      },
+      {
+        "build": "py_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+        "constrains": [],
+        "depends": [
+          "python"
+        ],
+        "fn": "filelock-3.0.12-py_0.conda",
+        "license": "Public Domain",
+        "license_family": "Public-Domain",
+        "md5": "dbade75b5023da90f954ec6ab620bde3",
+        "name": "filelock",
+        "noarch": "python",
+        "package_type": "noarch_python",
+        "sha256": "d010359068d27d6b2568efc89662ec2b458cec8f6aabbcaa28af90f85fb83293",
+        "size": 13198,
+        "subdir": "noarch",
+        "timestamp": 1559860745800,
+        "url": "https://repo.anaconda.com/pkgs/main/noarch/filelock-3.0.12-py_0.conda",
+        "version": "3.0.12"
+      },
+      {
+        "build": "py_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+        "constrains": [],
+        "depends": [
+          "python"
+        ],
+        "fn": "click-7.1.2-py_0.conda",
+        "license": "BSD-3-Clause",
+        "license_family": "BSD",
+        "md5": "122e0ead7703cf4f04a36b34e2d1f9a2",
+        "name": "click",
+        "noarch": "python",
+        "package_type": "noarch_python",
+        "sha256": "f015e82929d98f01769cdeaeb4e764bbd073d8339225d63fb08154884575b28c",
+        "size": 72569,
+        "subdir": "noarch",
+        "timestamp": 1588880814177,
+        "url": "https://repo.anaconda.com/pkgs/main/noarch/click-7.1.2-py_0.conda",
+        "version": "7.1.2"
+      },
+      {
+        "build": "py_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+        "constrains": [],
+        "depends": [
+          "python >=3.5"
+        ],
+        "fn": "typing_extensions-3.7.4.3-py_0.conda",
+        "license": "PSF-2.0",
+        "license_family": "PSF",
+        "md5": "c26af7e476ebc6e70a6005c4492eb18d",
+        "name": "typing_extensions",
+        "noarch": "python",
+        "package_type": "noarch_python",
+        "sha256": "462ec8c37cc4c9eea4da00d2f07a6e885052a7662293250aeda1ffd0e88dfddc",
+        "size": 28635,
+        "subdir": "noarch",
+        "timestamp": 1598376089172,
+        "url": "https://repo.anaconda.com/pkgs/main/noarch/typing_extensions-3.7.4.3-py_0.conda",
+        "version": "3.7.4.3"
+      },
+      {
+        "build": "openblas",
+        "build_number": 7,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [],
+        "fn": "blas-1.0-openblas.conda",
+        "md5": "9ddfcaef10d79366c90128f5dc444be8",
+        "name": "blas",
+        "sha256": "c85b5d0a336b5be0f415c71fd7fe2eca59e09f42221bfa684aafef5510ba5487",
+        "size": 46671,
+        "subdir": "linux-64",
+        "timestamp": 1528224118045,
+        "track_features": "nomkl",
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/blas-1.0-openblas.conda",
+        "version": "1.0"
+      },
+      {
+        "build": "pyhd3eb1b0_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+        "constrains": [],
+        "depends": [
+          "python >=3.5",
+          "setuptools"
+        ],
+        "fn": "pygments-2.7.3-pyhd3eb1b0_0.conda",
+        "license": "BSD-2-clause",
+        "md5": "df57436c45bcc2d12775599c7d394e55",
+        "name": "pygments",
+        "noarch": "python",
+        "package_type": "noarch_python",
+        "sha256": "c74e4cf7eaf3002d9746b10eba429fc9a8d311d19a2375738d42c354ca20589e",
+        "size": 692387,
+        "subdir": "noarch",
+        "timestamp": 1607368942748,
+        "url": "https://repo.anaconda.com/pkgs/main/noarch/pygments-2.7.3-pyhd3eb1b0_0.conda",
+        "version": "2.7.3"
+      },
+      {
+        "build": "h9ceee32_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "libgcc-ng >=7.3.0",
+          "libstdcxx-ng >=7.3.0",
+          "lz4-c >=1.9.2,<1.10.0a0",
+          "xz >=5.2.5,<6.0a0",
+          "zlib >=1.2.11,<1.3.0a0"
+        ],
+        "fn": "zstd-1.4.5-h9ceee32_0.conda",
+        "license": "BSD 3-Clause",
+        "md5": "d05e94324d0cdd0f8f7c099a1c46199b",
+        "name": "zstd",
+        "sha256": "bf2b02af3bb83cb46a22fccffb66798e58f4b132cf6337ca876e94aa2918ad46",
+        "size": 634191,
+        "subdir": "linux-64",
+        "timestamp": 1595964883124,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/zstd-1.4.5-h9ceee32_0.conda",
+        "version": "1.4.5"
+      },
+      {
+        "build": "254",
+        "build_number": 254,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [
+          "mkl >=2020.2"
+        ],
+        "depends": [],
+        "fn": "intel-openmp-2020.2-254.conda",
+        "license": "LicenseRef-ProprietaryIntel",
+        "license_family": "Proprietary",
+        "md5": "e5ebf34035f1012b68e2e1508c9c48a5",
+        "name": "intel-openmp",
+        "sha256": "d74e3c8068b6deb57474d863019b65ff1912ed4cf80cf36b1dcb509a9d1fbc60",
+        "size": 804535,
+        "subdir": "linux-64",
+        "timestamp": 1598384192885,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/intel-openmp-2020.2-254.conda",
+        "version": "2020.2"
+      },
+      {
+        "build": "h2733197_1",
+        "build_number": 1,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "jpeg >=9b,<10a",
+          "libgcc-ng >=7.3.0",
+          "libstdcxx-ng >=7.3.0",
+          "xz >=5.2.5,<6.0a0",
+          "zlib >=1.2.11,<1.3.0a0",
+          "zstd >=1.4",
+          "zstd >=1.4.4,<1.5.0a0"
+        ],
+        "fn": "libtiff-4.1.0-h2733197_1.conda",
+        "license": "HPND",
+        "md5": "6c4806c1cf73eefa92deab14c98c6c15",
+        "name": "libtiff",
+        "sha256": "6c956a33ff7cd7c38bcbd749028cc599be1b454798efdb2a0fff57cd3d6674fe",
+        "size": 459326,
+        "subdir": "linux-64",
+        "timestamp": 1591038832602,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/libtiff-4.1.0-h2733197_1.conda",
+        "version": "4.1.0"
+      },
+      {
+        "build": "pyhd3eb1b0_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+        "constrains": [],
+        "depends": [
+          "pyparsing >=2.0.2",
+          "python",
+          "six"
+        ],
+        "fn": "packaging-20.8-pyhd3eb1b0_0.conda",
+        "license": "Apache 2.0 or BSD 2-Clause",
+        "md5": "d402baf8ff8b836c34609f6b572438b2",
+        "name": "packaging",
+        "noarch": "python",
+        "package_type": "noarch_python",
+        "sha256": "bce8c3be3ce12043f473a216ff48b685ef1fa53b4cb3d22b970cdb75f4608702",
+        "size": 36647,
+        "subdir": "noarch",
+        "timestamp": 1607971758191,
+        "url": "https://repo.anaconda.com/pkgs/main/noarch/packaging-20.8-pyhd3eb1b0_0.conda",
+        "version": "20.8"
+      },
+      {
+        "build": "py37_1",
+        "build_number": 1,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "python >=3.7,<3.8.0a0"
+        ],
+        "fn": "future-0.18.2-py37_1.conda",
+        "license": "MIT",
+        "license_family": "MIT",
+        "md5": "9d3ee93b6047db58908e5e3b802a1a31",
+        "name": "future",
+        "sha256": "06e39cd49a9dee05e6c7d9ebd246c0a0b98d54bdb938bb08497490c575f9d930",
+        "size": 645922,
+        "subdir": "linux-64",
+        "timestamp": 1591809972903,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/future-0.18.2-py37_1.conda",
+        "version": "0.18.2"
+      },
+      {
+        "build": "py37h17e0dd7_1",
+        "build_number": 1,
+        "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+        "constrains": [],
+        "depends": [
+          "libgcc-ng >=7.5.0",
+          "libstdcxx-ng >=7.5.0",
+          "python >=3.7,<3.8.0a0",
+          "python_abi 3.7.* *_cp37m"
+        ],
+        "fn": "tokenizers-0.9.4-py37h17e0dd7_1.tar.bz2",
+        "license": "Apache-2.0",
+        "license_family": "APACHE",
+        "md5": "3efd1c7956aad0748b05e55e2573cfa3",
+        "name": "tokenizers",
+        "sha256": "ff708af93d04e35ddd194bc0918adfe6ca10d603ccee72c22a2a8634d19ecd82",
+        "size": 2745747,
+        "subdir": "linux-64",
+        "timestamp": 1605764870155,
+        "url": "https://conda.anaconda.org/conda-forge/linux-64/tokenizers-0.9.4-py37h17e0dd7_1.tar.bz2",
+        "version": "0.9.4"
+      },
+      {
+        "build": "pyhd3eb1b0_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+        "constrains": [],
+        "depends": [
+          "python >=3.6",
+          "setuptools"
+        ],
+        "fn": "joblib-1.0.0-pyhd3eb1b0_0.conda",
+        "license": "BSD-3-Clause",
+        "md5": "1a7e7d209b6cf04bfe9506f70ea593a6",
+        "name": "joblib",
+        "noarch": "python",
+        "package_type": "noarch_python",
+        "sha256": "cc9f58f1f3744beacac4d574bdea9eebc0f419c147ab8e0adee7a571763ade5f",
+        "size": 213459,
+        "subdir": "noarch",
+        "timestamp": 1607970691266,
+        "url": "https://repo.anaconda.com/pkgs/main/noarch/joblib-1.0.0-pyhd3eb1b0_0.conda",
+        "version": "1.0.0"
+      },
+      {
+        "build": "py37hff7bd54_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "libgcc-ng >=7.3.0",
+          "libstdcxx-ng >=7.3.0",
+          "python >=3.7,<3.8.0a0"
+        ],
+        "fn": "ninja-1.10.2-py37hff7bd54_0.conda",
+        "license": "Apache 2.0",
+        "license_family": "Apache",
+        "md5": "3edeeedd0c97ba1d90f35abb329b895d",
+        "name": "ninja",
+        "sha256": "8ef975855045ef481029f67a275a13acb55c2c0981b9d6f6305b5abc8146d2f3",
+        "size": 1507792,
+        "subdir": "linux-64",
+        "timestamp": 1606603235006,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/ninja-1.10.2-py37hff7bd54_0.conda",
+        "version": "1.10.2"
+      },
+      {
+        "build": "h024ee3a_2",
+        "build_number": 2,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "libgcc-ng >=7.2.0"
+        ],
+        "fn": "jpeg-9b-h024ee3a_2.conda",
+        "license": "Custom free software license",
+        "md5": "d8f003a909108eaa4a6d898dacb740f8",
+        "name": "jpeg",
+        "sha256": "3771b5c80500813ee442f6360a1453fc32d30e84d9f6ea71ef0c67de1860a0a0",
+        "size": 219316,
+        "subdir": "linux-64",
+        "timestamp": 1510201951443,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/jpeg-9b-h024ee3a_2.conda",
+        "version": "9b"
+      },
+      {
+        "build": "py37h75fe3a5_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [
+          "numpy 1.19.2 py37h6163131_0"
+        ],
+        "depends": [
+          "blas * openblas",
+          "libgcc-ng >=7.3.0",
+          "libopenblas >=0.3.3,<1.0a0",
+          "python >=3.7,<3.8.0a0"
+        ],
+        "fn": "numpy-base-1.19.2-py37h75fe3a5_0.conda",
+        "license": "BSD 3-Clause",
+        "md5": "5dfa362bcd97e744ae27387deb858ed0",
+        "name": "numpy-base",
+        "sha256": "29f14ae11729687d4db392c8c014d33c7c5704c42f17f9c65decc4401cb07985",
+        "size": 4318241,
+        "subdir": "linux-64",
+        "timestamp": 1603481040499,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/numpy-base-1.19.2-py37h75fe3a5_0.conda",
+        "version": "1.19.2"
+      },
+      {
+        "build": "py_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/noarch",
+        "constrains": [],
+        "depends": [
+          "python"
+        ],
+        "fn": "pyparsing-2.4.7-py_0.conda",
+        "license": "MIT",
+        "md5": "d6fe929a2cfbb096d7c66632036acd20",
+        "name": "pyparsing",
+        "noarch": "python",
+        "package_type": "noarch_python",
+        "sha256": "c93699962742fdc6e495058cd2e0d5ef0c509011c71d2e5dcabac19660fc1297",
+        "size": 66768,
+        "subdir": "noarch",
+        "timestamp": 1588352059240,
+        "url": "https://repo.anaconda.com/pkgs/main/noarch/pyparsing-2.4.7-py_0.conda",
+        "version": "2.4.7"
+      },
+      {
+        "build": "h6bb024c_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [
+          "__cuda >=10.1"
+        ],
+        "depends": [],
+        "fn": "cudatoolkit-10.1.243-h6bb024c_0.conda",
+        "md5": "86c2168ceb0c5e8707efce50699ed001",
+        "name": "cudatoolkit",
+        "sha256": "17aee803ff8207df6de98058a88badc9a3f840894251b9ea67701b6b23ee0395",
+        "size": 364312915,
+        "subdir": "linux-64",
+        "timestamp": 1572634034749,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/cudatoolkit-10.1.243-h6bb024c_0.conda",
+        "version": "10.1.243"
+      },
+      {
+        "build": "hbc83047_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "libgcc-ng >=7.3.0",
+          "zlib >=1.2.11,<1.3.0a0"
+        ],
+        "fn": "libpng-1.6.37-hbc83047_0.conda",
+        "license": "zlib/libpng",
+        "md5": "689f903925dcf6c5ab7bc1de0f58b67b",
+        "name": "libpng",
+        "sha256": "4f99638c8da0abe841c2b4bc337839f2a01363d40cfc334c0084e79dc0fd0a0d",
+        "size": 284656,
+        "subdir": "linux-64",
+        "timestamp": 1556041895170,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/libpng-1.6.37-hbc83047_0.conda",
+        "version": "1.6.37"
+      },
+      {
+        "build": "h14c3975_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "libgcc-ng >=7.2.0"
+        ],
+        "fn": "perl-5.26.2-h14c3975_0.conda",
+        "license": "Perl Artistic",
+        "license_family": "Other",
+        "md5": "146f65488ff2239f08a9f98942b60e1c",
+        "name": "perl",
+        "sha256": "8a8bfdb15fd0446503d6698b99e9f8c34fcf85c2fd00305edd447970a136a2b1",
+        "size": 10963304,
+        "subdir": "linux-64",
+        "timestamp": 1527832845796,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/perl-5.26.2-h14c3975_0.conda",
+        "version": "5.26.2"
+      },
+      {
+        "build": "py37h6163131_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "blas * openblas",
+          "libgcc-ng >=7.3.0",
+          "libopenblas >=0.3.3,<1.0a0",
+          "numpy-base 1.19.2 py37h75fe3a5_0",
+          "python >=3.7,<3.8.0a0"
+        ],
+        "fn": "numpy-1.19.2-py37h6163131_0.conda",
+        "license": "BSD 3-Clause",
+        "md5": "0b528858713be9de05bfbdf81e33535c",
+        "name": "numpy",
+        "sha256": "9897b8de90dc01048df50820e05a8bde730ee88e74022ded28611dab4320f6f7",
+        "size": 22145,
+        "subdir": "linux-64",
+        "timestamp": 1603481052303,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/numpy-1.19.2-py37h6163131_0.conda",
+        "version": "1.19.2"
+      },
+      {
+        "build": "h767d802_2",
+        "build_number": 2,
+        "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+        "constrains": [],
+        "depends": [
+          "libgcc-ng >=4.9",
+          "libstdcxx-ng >=4.9",
+          "perl"
+        ],
+        "fn": "gperftools-2.7-h767d802_2.tar.bz2",
+        "license": "BSD-3-Clause",
+        "license_family": "BSD",
+        "md5": "e5f182d83bdf062ea1f6ef500d73ec52",
+        "name": "gperftools",
+        "sha256": "af2c85af2c3c8da9645bd64d492c653f1e90467f08467353b38ba0c25061a9e2",
+        "size": 2359781,
+        "subdir": "linux-64",
+        "timestamp": 1535075616225,
+        "url": "https://conda.anaconda.org/conda-forge/linux-64/gperftools-2.7-h767d802_2.tar.bz2",
+        "version": "2.7"
+      },
+      {
+        "build": "py37_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "python >=3.7,<3.8.0a0"
+        ],
+        "fn": "dataclasses-0.7-py37_0.conda",
+        "license": "Apache-2.0",
+        "md5": "ae452172f94aec8bee79f8968cd8f272",
+        "name": "dataclasses",
+        "sha256": "1c7652968a36dc167ed022fcff9fa1ae87b549f6e9f0244b1eb0df4cafbd7295",
+        "size": 8952,
+        "subdir": "linux-64",
+        "timestamp": 1582149612209,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/dataclasses-0.7-py37_0.conda",
+        "version": "0.7"
+      },
+      {
+        "build": "py37_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "numpy",
+          "pillow >=4.1.1",
+          "python >=3.7,<3.8.0a0",
+          "pytorch >=0.4",
+          "six"
+        ],
+        "fn": "torchvision-0.2.1-py37_0.conda",
+        "license": "BSD 3-Clause",
+        "license_family": "BSD",
+        "md5": "eec05ce4639f232019969be0bf5da02b",
+        "name": "torchvision",
+        "sha256": "a81e5e1856b8b82dd2038a85e21b4fce41e8390c92e321a8a61b573d15ee299e",
+        "size": 76936,
+        "subdir": "linux-64",
+        "timestamp": 1565199693994,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/torchvision-0.2.1-py37_0.conda",
+        "version": "0.2.1"
+      },
+      {
+        "build": "heb0550a_3",
+        "build_number": 3,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "libgcc-ng >=7.3.0",
+          "libstdcxx-ng >=7.3.0"
+        ],
+        "fn": "lz4-c-1.9.2-heb0550a_3.conda",
+        "license": "BSD-2-Clause",
+        "md5": "e5ca74db6634f89f50979eadcea8b0c8",
+        "name": "lz4-c",
+        "sha256": "dcb108018b049fdb6694134c4f65a9ea838af131a814414e3289937db1763e0b",
+        "size": 179170,
+        "subdir": "linux-64",
+        "timestamp": 1601566162695,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/lz4-c-1.9.2-heb0550a_3.conda",
+        "version": "1.9.2"
+      },
+      {
+        "build": "py37h89c1867_0",
+        "build_number": 0,
+        "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+        "constrains": [],
+        "depends": [
+          "colorama >=0.4.0,<0.5.0",
+          "commonmark >=0.9.0,<0.10.0",
+          "pygments >=2.6.0,<3.0.0",
+          "python >=3.7,<3.8.0a0",
+          "python_abi 3.7.* *_cp37m",
+          "typing_extensions >=3.7.4,<4.0.0"
+        ],
+        "fn": "rich-9.6.1-py37h89c1867_0.tar.bz2",
+        "license": "MIT",
+        "license_family": "MIT",
+        "md5": "0bbdc8b8cbd18260b539361590788250",
+        "name": "rich",
+        "sha256": "7a61591d7bb760005b1a483010a5b4259679fb52f0621d091b5c00e22733aa97",
+        "size": 302495,
+        "subdir": "linux-64",
+        "timestamp": 1609444457293,
+        "url": "https://conda.anaconda.org/conda-forge/linux-64/rich-9.6.1-py37h89c1867_0.tar.bz2",
+        "version": "9.6.1"
+      },
+      {
+        "build": "py37he98fc37_0",
+        "build_number": 0,
+        "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+        "constrains": [],
+        "depends": [
+          "freetype >=2.10.4,<3.0a0",
+          "jpeg",
+          "lcms2 >=2.11,<3.0a0",
+          "libgcc-ng >=7.3.0",
+          "libtiff >=4.1.0,<5.0a0",
+          "olefile",
+          "python >=3.7,<3.8.0a0",
+          "tk",
+          "zlib >=1.2.11,<1.3.0a0"
+        ],
+        "fn": "pillow-8.0.1-py37he98fc37_0.conda",
+        "license": "LicenseRef-PIL",
+        "md5": "134e1d521c5e951efd169cdefa88eec1",
+        "name": "pillow",
+        "sha256": "4e340eda2ac814a5073457ab756159d40a2d386347509d04bb710ce1e2fa2b48",
+        "size": 633404,
+        "subdir": "linux-64",
+        "timestamp": 1603822320358,
+        "url": "https://repo.anaconda.com/pkgs/main/linux-64/pillow-8.0.1-py37he98fc37_0.conda",
+        "version": "8.0.1"
+      },
+      {
+        "build": "py37h99015e2_0",
+        "build_number": 0,
+        "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+        "constrains": [],
+        "depends": [
+          "gperftools",
+          "libgcc-ng >=7.5.0",
+          "libstdcxx-ng >=7.5.0",
+          "python >=3.7,<3.8.0a0",
+          "python_abi 3.7.* *_cp37m"
+        ],
+        "fn": "sentencepiece-0.1.92-py37h99015e2_0.tar.bz2",
+        "license": "Apache-2.0",
+        "license_family": "Apache",
+        "md5": "2d69ac79d31092505aecd1de1c0d8d0d",
+        "name": "sentencepiece",
+        "sha256": "2c5770a265d9c350e4ed351e2c5136e95ca704de7fa88d8b5cd501a5e7834b69",
+        "size": 2386150,
+        "subdir": "linux-64",
+        "timestamp": 1594319376479,
+        "url": "https://conda.anaconda.org/conda-forge/linux-64/sentencepiece-0.1.92-py37h99015e2_0.tar.bz2",
+        "version": "0.1.92"
+      },
+      {
+        "build": "pyh9f0ad1d_0",
+        "build_number": 0,
+        "channel": "https://conda.anaconda.org/conda-forge/noarch",
+        "constrains": [],
+        "depends": [
+          "click",
+          "joblib",
+          "python",
+          "regex",
+          "six",
+          "tqdm"
+        ],
+        "fn": "sacremoses-0.0.43-pyh9f0ad1d_0.tar.bz2",
+        "license": "LGPL-2.1-or-later",
+        "license_family": "LGPL",
+        "md5": "68caa05c8471663d22361fb98c471fd7",
+        "name": "sacremoses",
+        "noarch": "python",
+        "package_type": "noarch_python",
+        "sha256": "8b2a181d556746b3dc016afe5f5f2039025f4a0e9217a722bf15dbc55ee80911",
+        "size": 440530,
+        "subdir": "noarch",
+        "timestamp": 1588857687622,
+        "url": "https://conda.anaconda.org/conda-forge/noarch/sacremoses-0.0.43-pyh9f0ad1d_0.tar.bz2",
+        "version": "0.0.43"
+      }
+    ],
+    "LINK": [
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 7,
+        "build_string": "openblas",
+        "channel": "pkgs/main",
+        "dist_name": "blas-1.0-openblas",
+        "name": "blas",
+        "platform": "linux-64",
+        "version": "1.0"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "h6bb024c_0",
+        "channel": "pkgs/main",
+        "dist_name": "cudatoolkit-10.1.243-h6bb024c_0",
+        "name": "cudatoolkit",
+        "platform": "linux-64",
+        "version": "10.1.243"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 254,
+        "build_string": "254",
+        "channel": "pkgs/main",
+        "dist_name": "intel-openmp-2020.2-254",
+        "name": "intel-openmp",
+        "platform": "linux-64",
+        "version": "2020.2"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "hdf63c60_0",
+        "channel": "pkgs/main",
+        "dist_name": "libgfortran-ng-7.3.0-hdf63c60_0",
+        "name": "libgfortran-ng",
+        "platform": "linux-64",
+        "version": "7.3.0"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 256,
+        "build_string": "256",
+        "channel": "pkgs/main",
+        "dist_name": "mkl-2020.2-256",
+        "name": "mkl",
+        "platform": "linux-64",
+        "version": "2020.2"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 2,
+        "build_string": "h024ee3a_2",
+        "channel": "pkgs/main",
+        "dist_name": "jpeg-9b-h024ee3a_2",
+        "name": "jpeg",
+        "platform": "linux-64",
+        "version": "9b"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "h5a2b251_0",
+        "channel": "pkgs/main",
+        "dist_name": "libopenblas-0.3.10-h5a2b251_0",
+        "name": "libopenblas",
+        "platform": "linux-64",
+        "version": "0.3.10"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 3,
+        "build_string": "heb0550a_3",
+        "channel": "pkgs/main",
+        "dist_name": "lz4-c-1.9.2-heb0550a_3",
+        "name": "lz4-c",
+        "platform": "linux-64",
+        "version": "1.9.2"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "h14c3975_0",
+        "channel": "pkgs/main",
+        "dist_name": "perl-5.26.2-h14c3975_0",
+        "name": "perl",
+        "platform": "linux-64",
+        "version": "5.26.2"
+      },
+      {
+        "base_url": "https://conda.anaconda.org/conda-forge",
+        "build_number": 2,
+        "build_string": "h767d802_2",
+        "channel": "conda-forge",
+        "dist_name": "gperftools-2.7-h767d802_2",
+        "name": "gperftools",
+        "platform": "linux-64",
+        "version": "2.7"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "hbc83047_0",
+        "channel": "pkgs/main",
+        "dist_name": "libpng-1.6.37-hbc83047_0",
+        "name": "libpng",
+        "platform": "linux-64",
+        "version": "1.6.37"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "h9ceee32_0",
+        "channel": "pkgs/main",
+        "dist_name": "zstd-1.4.5-h9ceee32_0",
+        "name": "zstd",
+        "platform": "linux-64",
+        "version": "1.4.5"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "h5ab3b9f_0",
+        "channel": "pkgs/main",
+        "dist_name": "freetype-2.10.4-h5ab3b9f_0",
+        "name": "freetype",
+        "platform": "linux-64",
+        "version": "2.10.4"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 1,
+        "build_string": "h2733197_1",
+        "channel": "pkgs/main",
+        "dist_name": "libtiff-4.1.0-h2733197_1",
+        "name": "libtiff",
+        "platform": "linux-64",
+        "version": "4.1.0"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "h396b838_0",
+        "channel": "pkgs/main",
+        "dist_name": "lcms2-2.11-h396b838_0",
+        "name": "lcms2",
+        "platform": "linux-64",
+        "version": "2.11"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "py_0",
+        "channel": "pkgs/main",
+        "dist_name": "click-7.1.2-py_0",
+        "name": "click",
+        "platform": "noarch",
+        "version": "7.1.2"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "pyhd3eb1b0_0",
+        "channel": "pkgs/main",
+        "dist_name": "colorama-0.4.4-pyhd3eb1b0_0",
+        "name": "colorama",
+        "platform": "noarch",
+        "version": "0.4.4"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "py37_0",
+        "channel": "pkgs/main",
+        "dist_name": "dataclasses-0.7-py37_0",
+        "name": "dataclasses",
+        "platform": "linux-64",
+        "version": "0.7"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "py_0",
+        "channel": "pkgs/main",
+        "dist_name": "filelock-3.0.12-py_0",
+        "name": "filelock",
+        "platform": "noarch",
+        "version": "3.0.12"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 1,
+        "build_string": "py37_1",
+        "channel": "pkgs/main",
+        "dist_name": "future-0.18.2-py37_1",
+        "name": "future",
+        "platform": "linux-64",
+        "version": "0.18.2"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "py37hff7bd54_0",
+        "channel": "pkgs/main",
+        "dist_name": "ninja-1.10.2-py37hff7bd54_0",
+        "name": "ninja",
+        "platform": "linux-64",
+        "version": "1.10.2"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "py37h75fe3a5_0",
+        "channel": "pkgs/main",
+        "dist_name": "numpy-base-1.19.2-py37h75fe3a5_0",
+        "name": "numpy-base",
+        "platform": "linux-64",
+        "version": "1.19.2"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "py37_0",
+        "channel": "pkgs/main",
+        "dist_name": "olefile-0.46-py37_0",
+        "name": "olefile",
+        "platform": "linux-64",
+        "version": "0.46"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "py_0",
+        "channel": "pkgs/main",
+        "dist_name": "pyparsing-2.4.7-py_0",
+        "name": "pyparsing",
+        "platform": "noarch",
+        "version": "2.4.7"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "py37h27cfd23_0",
+        "channel": "pkgs/main",
+        "dist_name": "regex-2020.11.13-py37h27cfd23_0",
+        "name": "regex",
+        "platform": "linux-64",
+        "version": "2020.11.13"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "py_0",
+        "channel": "pkgs/main",
+        "dist_name": "typing_extensions-3.7.4.3-py_0",
+        "name": "typing_extensions",
+        "platform": "noarch",
+        "version": "3.7.4.3"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "py_0",
+        "channel": "pkgs/main",
+        "dist_name": "commonmark-0.9.1-py_0",
+        "name": "commonmark",
+        "platform": "noarch",
+        "version": "0.9.1"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "py37h6163131_0",
+        "channel": "pkgs/main",
+        "dist_name": "numpy-1.19.2-py37h6163131_0",
+        "name": "numpy",
+        "platform": "linux-64",
+        "version": "1.19.2"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "pyhd3eb1b0_0",
+        "channel": "pkgs/main",
+        "dist_name": "packaging-20.8-pyhd3eb1b0_0",
+        "name": "packaging",
+        "platform": "noarch",
+        "version": "20.8"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "py37he98fc37_0",
+        "channel": "pkgs/main",
+        "dist_name": "pillow-8.0.1-py37he98fc37_0",
+        "name": "pillow",
+        "platform": "linux-64",
+        "version": "8.0.1"
+      },
+      {
+        "base_url": "https://conda.anaconda.org/conda-forge",
+        "build_number": 0,
+        "build_string": "py37h99015e2_0",
+        "channel": "conda-forge",
+        "dist_name": "sentencepiece-0.1.92-py37h99015e2_0",
+        "name": "sentencepiece",
+        "platform": "linux-64",
+        "version": "0.1.92"
+      },
+      {
+        "base_url": "https://conda.anaconda.org/conda-forge",
+        "build_number": 1,
+        "build_string": "py37h17e0dd7_1",
+        "channel": "conda-forge",
+        "dist_name": "tokenizers-0.9.4-py37h17e0dd7_1",
+        "name": "tokenizers",
+        "platform": "linux-64",
+        "version": "0.9.4"
+      },
+      {
+        "base_url": "https://conda.anaconda.org/pytorch",
+        "build_number": 0,
+        "build_string": "py3.7_cuda10.1.243_cudnn7.6.3_0",
+        "channel": "pytorch",
+        "dist_name": "pytorch-1.4.0-py3.7_cuda10.1.243_cudnn7.6.3_0",
+        "name": "pytorch",
+        "platform": "linux-64",
+        "version": "1.4.0"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "pyhd3eb1b0_0",
+        "channel": "pkgs/main",
+        "dist_name": "joblib-1.0.0-pyhd3eb1b0_0",
+        "name": "joblib",
+        "platform": "noarch",
+        "version": "1.0.0"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "pyhd3eb1b0_0",
+        "channel": "pkgs/main",
+        "dist_name": "pygments-2.7.3-pyhd3eb1b0_0",
+        "name": "pygments",
+        "platform": "noarch",
+        "version": "2.7.3"
+      },
+      {
+        "base_url": "https://repo.anaconda.com/pkgs/main",
+        "build_number": 0,
+        "build_string": "py37_0",
+        "channel": "pkgs/main",
+        "dist_name": "torchvision-0.2.1-py37_0",
+        "name": "torchvision",
+        "platform": "linux-64",
+        "version": "0.2.1"
+      },
+      {
+        "base_url": "https://conda.anaconda.org/conda-forge",
+        "build_number": 0,
+        "build_string": "py37h89c1867_0",
+        "channel": "conda-forge",
+        "dist_name": "rich-9.6.1-py37h89c1867_0",
+        "name": "rich",
+        "platform": "linux-64",
+        "version": "9.6.1"
+      },
+      {
+        "base_url": "https://conda.anaconda.org/conda-forge",
+        "build_number": 0,
+        "build_string": "pyh9f0ad1d_0",
+        "channel": "conda-forge",
+        "dist_name": "sacremoses-0.0.43-pyh9f0ad1d_0",
+        "name": "sacremoses",
+        "platform": "noarch",
+        "version": "0.0.43"
+      },
+      {
+        "base_url": "https://conda.anaconda.org/conda-forge",
+        "build_number": 0,
+        "build_string": "pyhd8ed1ab_0",
+        "channel": "conda-forge",
+        "dist_name": "timm-0.3.2-pyhd8ed1ab_0",
+        "name": "timm",
+        "platform": "noarch",
+        "version": "0.3.2"
+      },
+      {
+        "base_url": "https://conda.anaconda.org/conda-forge",
+        "build_number": 1,
+        "build_string": "pyhd8ed1ab_1",
+        "channel": "conda-forge",
+        "dist_name": "transformers-4.1.1-pyhd8ed1ab_1",
+        "name": "transformers",
+        "platform": "noarch",
+        "version": "4.1.1"
+      }
+    ],
+    "PREFIX": "/home/hamelsmu/miniconda3/envs/tmp-3.7"
+  },
+  "dry_run": true,
+  "prefix": "/home/hamelsmu/miniconda3/envs/tmp-3.7",
+  "success": true
+}
+19326 packages in https://repo.anaconda.com/pkgs/main/linux-64
+2583 packages in https://repo.anaconda.com/pkgs/main/noarch
+6637 packages in https://repo.anaconda.com/pkgs/r/linux-64
+5025 packages in https://repo.anaconda.com/pkgs/r/noarch
+147630 packages in https://conda.anaconda.org/conda-forge/linux-64
+45400 packages in https://conda.anaconda.org/conda-forge/noarch
+32 packages in https://conda.anaconda.org/fastai/linux-64
+262 packages in https://conda.anaconda.org/fastai/noarch
+1540 packages in https://conda.anaconda.org/pytorch/linux-64
+58 packages in https://conda.anaconda.org/pytorch/noarch
