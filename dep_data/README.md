@@ -1,0 +1,1 @@
+Do not place anything in this directory.
