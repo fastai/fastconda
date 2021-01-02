@@ -1,3 +1,4 @@
+*.log
 token
 pythonenv*/
 conda/
