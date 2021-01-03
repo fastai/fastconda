@@ -5,8 +5,12 @@ on:
 
 jobs:
   copy:
+    env:
+      FASTCHAN: ${{ secrets.FASTCHAN }}
+    strategy:
+      matrix:
+        py: [3.6, 3.7, 3.8]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Run a one-line script
-        run: bash get_deps.sh
+      - run: bash get_deps.sh ${{ matrix.py }}
