@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-        bash get_deps.sh 3.6
-        bash get_deps.sh 3.7
-        bash get_deps.sh 3.8
-
+          bash get_deps.sh 3.6
+          bash get_deps.sh 3.7
+          bash get_deps.sh 3.8
