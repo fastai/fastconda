@@ -1,15 +1,13 @@
 name: anacopy
-
-on:
-  workflow_dispatch:
+on: {workflow_dispatch:}
 
 jobs:
   copy:
     env:
       FASTCHAN: ${{ secrets.FASTCHAN }}
     strategy:
-      matrix:
-        py: [3.6, 3.7, 3.8]
+      fail-fast: false
+      matrix: {py: [3.6, 3.7, 3.8]}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
