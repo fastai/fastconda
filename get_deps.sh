@@ -16,6 +16,6 @@ if [[ $py != 3.6 ]]; then
 fi
 inst -c pytorch -c defaults -c conda-forge 'pytorch>=1.7' torchvision >> $dest
 inst -c defaults -c conda-forge transformers sentencepiece rich albumentations mamba >> $dest
-inst -c fastai -c defaults -c conda-forge fastai >> $dest
+inst -c fastai -c defaults -c conda-forge fastai timm >> $dest
 inst -c fastai -c defaults -c conda-forge nbdev fastbook fastgpu fastrelease ghapi fastcgi fastdot >> $dest
 
