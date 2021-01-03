@@ -3,7 +3,9 @@ from fastcore.all import *
 
 tok = os.getenv('FASTCHAN')
 def inst(s, bin='mamba'): return dict2obj(loads(run(f'{bin} install --json -qyc {s}'))).actions.LINK
-def anacopy(nm): code,out = run(f'anaconda -t {tok} copy {nm}', ignore_ex=True)
+def anacopy(nm):
+    code,out = run(f'anaconda -t {tok} copy {nm}', ignore_ex=True)
+    if out.strip(): print(out.strip())
 
 links = L(inst('defaults -c conda-forge mamba', 'conda'))
 if sys.version_info[:2]!=(3,6):
