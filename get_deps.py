@@ -12,7 +12,7 @@ if sys.version_info[:2]!=(3,6):
     links += inst("rapidsai -c nvidia -c defaults -c conda-forge 'cugraph>=0.17' 'cudf>=0.17' 'cuml>=0.17' 'cudatoolkit>=11'")
 links += L(
     "pytorch -c defaults -c conda-forge 'pytorch>=1.7' torchvision",
-    "defaults -c conda-forge transformers sentencepiece rich albumentations mamba",
+    "defaults -c conda-forge transformers sentencepiece rich mamba",
     "fastai -c defaults -c conda-forge fastai timm",
     "fastai -c defaults -c conda-forge nbdev fastbook fastgpu fastrelease ghapi fastcgi fastdot"
 ).map(inst).concat()
