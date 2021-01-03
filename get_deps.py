@@ -9,7 +9,7 @@ def anacopy(nm):
 
 links = L(inst('defaults -c conda-forge mamba', 'conda'))
 if sys.version_info[:2]!=(3,6):
-    links.append(inst("rapidsai -c nvidia -c defaults -c conda-forge 'cugraph>=0.17' 'cudf>=0.17' 'cuml>=0.17' 'cudatoolkit>=11'"))
+    links += inst("rapidsai -c nvidia -c defaults -c conda-forge 'cugraph>=0.17' 'cudf>=0.17' 'cuml>=0.17' 'cudatoolkit>=11'")
 links += L(
     "pytorch -c defaults -c conda-forge 'pytorch>=1.7' torchvision",
     "defaults -c conda-forge transformers sentencepiece rich albumentations mamba",
