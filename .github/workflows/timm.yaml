@@ -1,0 +1,25 @@
+name: timm
+on:
+  workflow_dispatch:
+
+env:
+  ANACONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        py: [3.6, 3.7, 3.8]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          python-version: ${{ matrix.py }}
+      - name: build
+        run: |
+          conda install -yq anaconda-client conda-build
+          ./build_timm.sh
+        shell: bash -l {0}
