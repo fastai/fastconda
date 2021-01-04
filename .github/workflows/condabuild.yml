@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  copy:
+  build:
     env:
       FASTCHAN: ${{ secrets.ANACONDA_TOKEN }}
     strategy:
