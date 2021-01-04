@@ -9,9 +9,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        py: [3.6, 3.7, 3.8]
+        py: [3.6, 3.7, 3.8 3.9]
         os: [ubuntu, windows, macos]
     runs-on: ubuntu-${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
-      - run: condabuild.sh ${{ matrix.py }}
+      - run: bash condabuild.sh ${{ matrix.py }}
+
