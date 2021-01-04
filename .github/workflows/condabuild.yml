@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
-      - run: bash get_deps.sh ${{ matrix.py }}
+      - run: condabuild.sh ${{ matrix.py }}
