@@ -9,7 +9,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        py: [3.6, 3.7, 3.8, 3.9]
+        py: [3.6, 3.7, 3.8]
         os: [ubuntu, windows, macos]
     runs-on: ${{ matrix.os }}-latest
     steps:
