@@ -22,6 +22,6 @@ jobs:
           ANACONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
         run: |
           conda install -yq anaconda-client conda-build
-          condabuild.sh
+          ./condabuild.sh
         shell: bash -l {0}
 
