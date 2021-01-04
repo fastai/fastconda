@@ -21,5 +21,6 @@ jobs:
       - name: build
         run: |
           conda install -yq anaconda-client conda-build
+          conda install -c fastai ghapi
           ./build_timm.sh
         shell: bash -l {0}
