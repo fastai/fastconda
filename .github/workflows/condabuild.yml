@@ -15,4 +15,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: bash condabuild.sh ${{ matrix.py }}
-
+        env:
+          ANACONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
