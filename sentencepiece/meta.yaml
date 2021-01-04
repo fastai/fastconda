@@ -18,8 +18,8 @@ requirements:
 
   run:
     - python
-    - libstdcxx-ng
-    - libgcc-ng
+    #- libstdcxx-ng
+    #- libgcc-ng
 
 test:
   imports:
