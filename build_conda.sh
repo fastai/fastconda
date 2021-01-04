@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 set -e
 
-tag=$(python get_tag.py --force)
+tag=$(python get_tag.py)
 if [ "$tag" ]; then
     eval "$(conda shell.bash hook)"
     conda create -yqn tmp-buildconda -c cbillington -c defaults python=3.8 setuptools-conda anaconda-client
