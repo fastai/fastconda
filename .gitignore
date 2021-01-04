@@ -1,3 +1,4 @@
+output/
 *.log
 token
 pythonenv*/
