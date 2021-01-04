@@ -1,0 +1,17 @@
+name: condabuild
+on:
+  workflow_dispatch:
+
+jobs:
+  copy:
+    env:
+      FASTCHAN: ${{ secrets.ANACONDA_TOKEN }}
+    strategy:
+      fail-fast: false
+      matrix:
+        py: [3.6, 3.7, 3.8]
+        os: [ubuntu, windows, macos]
+    runs-on: ubuntu-${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+      - run: bash get_deps.sh ${{ matrix.py }}
