@@ -1,0 +1,28 @@
+name: condabuild
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    env:
+      FASTCHAN: ${{ secrets.ANACONDA_TOKEN }}
+    strategy:
+      fail-fast: false
+      matrix:
+        py: [3.6, 3.7, 3.8]
+        os: [ubuntu, windows, macos]
+    runs-on: ${{ matrix.os }}-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          python-version: ${{ matrix.py }}
+      - name: build
+        env:
+          ANACONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
+        run: |
+          conda install -yq anaconda-client conda-build
+          ./condabuild.sh
+        shell: bash -l {0}
+
