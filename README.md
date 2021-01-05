@@ -4,9 +4,9 @@
 
 ## Status
 
- | GitHub | Conda
+Package Name | GitHub | Conda |
 -- | -- | --
-timm | ![](https://img.shields.io/github/v/release/rwightman/pytorch-image-models) | ![](https://img.shields.io/conda/vn/fastai/timm)
+timm | ![](https://img.shields.io/github/v/release/rwightman/pytorch-image-models) | ![](https://img.shields.io/conda/vn/fastai/timm) |
 
 
 ## condabuild
