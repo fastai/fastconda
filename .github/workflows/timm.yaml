@@ -1,14 +1,17 @@
 name: timm
 on:
   workflow_dispatch:
-schedule:
-  - cron: "* */6 * * *"
+  schedule:
+    - cron: "* */6 * * *"
 
 env:
   ANACONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
 
 jobs:
   build:
+    defaults:
+      run:
+        shell: bash -l {0}
     strategy:
       fail-fast: false
       matrix:
@@ -20,10 +23,10 @@ jobs:
         with:
           auto-update-conda: true
           python-version: ${{ matrix.py }}
-      - name: build
+      - name: Install dependencies
         run: |
           conda install -yq anaconda-client conda-build
           conda install mamba -c conda-forge
           mamba install -c fastai ghapi fastcore
-          ./build_timm.sh
-        shell: bash -l {0}
+      - name: Build and Publish
+        run: ./build_timm.sh

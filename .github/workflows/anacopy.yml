@@ -1,8 +1,8 @@
 name: anacopy
 on:
   workflow_dispatch:
-schedule:
-  - cron: "* */6 * * *"
+  schedule:
+    - cron: "* */6 * * *"
 
 jobs:
   copy:
