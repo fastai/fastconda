@@ -2,6 +2,9 @@ name: condabuild
 on:
   workflow_dispatch:
 
+env:
+  ANACONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
+
 jobs:
   build:
     env:
@@ -18,11 +21,9 @@ jobs:
         with:
           auto-update-conda: true
           python-version: ${{ matrix.py }}
-      - name: build
-        env:
-          ANACONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
-        run: |
-          conda install -yq anaconda-client conda-build
-          ./condabuild.sh
+      - name: install dependencies
+        run: conda install -yq anaconda-client conda-build
         shell: bash -l {0}
-
+      - name: build
+        run: ./condabuild.sh
+        shell: bash -l {0}
