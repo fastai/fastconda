@@ -12,17 +12,13 @@ jobs:
     defaults:
       run:
         shell: bash -l {0}
-    strategy:
-      fail-fast: false
-      matrix:
-        py: [3.6, 3.7, 3.8]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: conda-incubator/setup-miniconda@v2
         with:
           auto-update-conda: true
-          python-version: ${{ matrix.py }}
+          python-version: 3.8
       - name: Install dependencies
         run: |
           conda install -yq anaconda-client conda-build
