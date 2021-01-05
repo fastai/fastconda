@@ -9,7 +9,8 @@ env:
 jobs:
   build:
     defaults:
-      shell: bash -l {0}
+      run:
+        shell: bash -l {0}
     strategy:
       fail-fast: false
       matrix:
