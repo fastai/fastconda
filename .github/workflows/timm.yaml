@@ -21,6 +21,7 @@ jobs:
       - name: build
         run: |
           conda install -yq anaconda-client conda-build
-          conda install -c fastai ghapi fastcore
+          conda install mamba -c conda-forge
+          mamba install -c fastai ghapi fastcore
           ./build_timm.sh
         shell: bash -l {0}
