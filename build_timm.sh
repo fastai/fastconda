@@ -1,7 +1,14 @@
 #! /usr/bin/env bash
 set -e
 
-tag=$(python get_tag.py)
+if [[ "$1" = "-h" ]] || [[ "$1" = "--help" ]];then
+    echo "optional arguments:"
+    echo "--force            Return the github tag no matter what. (default: False)"
+    echo "-h, --help         show this help message and exit"
+    exit 0;
+fi
+
+tag=$(python get_tag.py "$1")
 if [ "$tag" ]; then
     eval "$(conda shell.bash hook)"
     conda create -yqn tmp-buildconda -c cbillington -c defaults python=3.8 setuptools-conda anaconda-client
@@ -11,5 +18,5 @@ if [ "$tag" ]; then
     git clone -b "$tag" --depth 1 https://github.com/rwightman/pytorch-image-models.git .
     setuptools-conda build --conda-name-differences 'torch:pytorch' -c pytorch .
     conda convert -p all -o conda_packages conda_packages/*/*.tar.bz2
-    anaconda -t $ANACONDA_TOKEN upload --skip -u fastai conda_packages/*/*.tar.bz2
+    anaconda -t $ANACONDA_TOKEN upload --skip -u fastai conda_packages/*/*.tar.bz2 || true
 fi
