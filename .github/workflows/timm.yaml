@@ -23,5 +23,5 @@ jobs:
           conda install -yq anaconda-client conda-build
           conda install mamba -c conda-forge
           mamba install -c fastai ghapi fastcore
-          ./build_timm.sh
+          ./build_timm.sh --force
         shell: bash -l {0}
