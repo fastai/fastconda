@@ -1,6 +1,8 @@
 name: timm
 on:
   workflow_dispatch:
+schedule:
+  - cron: "* */6 * * *"
 
 env:
   ANACONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
