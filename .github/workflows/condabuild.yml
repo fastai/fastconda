@@ -31,4 +31,4 @@ jobs:
           conda install mamba -c conda-forge
           mamba install -c fastai ghapi fastcore fastrelease
       - name: build
-        run: ./condabuild.sh
+        run: . ./condabuild.sh
