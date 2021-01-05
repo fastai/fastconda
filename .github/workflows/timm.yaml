@@ -29,4 +29,4 @@ jobs:
           conda install mamba -c conda-forge
           mamba install -c fastai ghapi fastcore fastrelease
       - name: Build and Publish
-        run: ./build_timm.sh
+        run: ./build_timm.sh --force
