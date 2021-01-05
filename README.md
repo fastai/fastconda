@@ -2,6 +2,13 @@
 
 > Get packages onto your conda channel faster
 
+## Status
+
+ | GitHub | Conda
+-- | -- | --
+timm | ![](https://img.shields.io/github/v/release/rwightman/pytorch-image-models) | ![](https://img.shields.io/conda/vn/fastai/timm)
+
+
 ## condabuild
 
 Builds a conda package that simply installs a pip package (currently just does sentencepiece).
