@@ -1,12 +1,15 @@
 # fastconda
-Get packages onto your conda channel faster
 
-## Usage
+> Get packages onto your conda channel faster
 
-> ./do.sh {python version number}
+## condabuild
 
-For example:
+Builds a conda package that simply installs a pip package (currently just does sentencepiece).
 
-```
-> ./do.sh 3.8
-```
+## build_timm
+
+Creates a conda package from a source repo using `setuptools-conda` (currently just does timm).
+
+## get_deps
+
+Copies the following (and their dependencies) from conda-forge, nvidia, rapids, and fastai channels to the fastchan channel: cudf cudatoolkit mamba pytorch torchvision transformers rich sentencepiece fastai timm conda-forge nbdev fastrelease ghapi fastcgi.
