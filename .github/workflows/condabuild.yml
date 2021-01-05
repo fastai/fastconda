@@ -26,6 +26,9 @@ jobs:
           auto-update-conda: true
           python-version: ${{ matrix.py }}
       - name: install dependencies
-        run: conda install -yq anaconda-client conda-build
+        run: |
+          conda install -yq anaconda-client conda-build
+          conda install mamba -c conda-forge
+          mamba install -c ghapi fastcore
       - name: build
         run: ./condabuild.sh
