@@ -27,10 +27,8 @@ jobs:
           python-version: ${{ matrix.py }}
       - name: install dependencies
         run: |
-          conda install mamba -c fastchan
-          mamba install -yq anaconda-client conda-build
-          mamba install -yq -c conda-forge boa
-          mamba install -c fastai ghapi fastcore fastrelease
+          conda install -c fastchan mamba
+          mamba install -yq -c fastai -c fastchan -c defaults boa anaconda-client conda-build ghapi fastcore fastrelease
       - name: build
         run: python condabuild.py sentencepiece
 
