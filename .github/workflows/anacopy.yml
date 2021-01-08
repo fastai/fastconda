@@ -10,8 +10,10 @@ jobs:
       FASTCHAN: ${{ secrets.FASTCHAN }}
     strategy:
       fail-fast: false
-      matrix: {py: [3.6, 3.7, 3.8]}
-    runs-on: ubuntu-latest
+      matrix:
+        py: [3.6, 3.7, 3.8]
+        os: [ubuntu, macos]
+    runs-on: ${{ matrix.os }}-latest
     steps:
       - uses: actions/checkout@v2
       - run: bash get_deps.sh ${{ matrix.py }}
