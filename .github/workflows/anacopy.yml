@@ -24,5 +24,6 @@ jobs:
           channels: pytorch,fastai,defaults,conda-forge
           channel-priority: strict
       - uses: actions/checkout@v2
+      - run: pip install -Uq fastcore
       - run: python get_deps.py
 
