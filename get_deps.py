@@ -2,7 +2,12 @@
 from fastcore.all import *
 
 def inst(s, bin='mamba'):
-    res = dict2obj(loads(run(f'{bin} install --strict-channel-priority --json -qyc {s}')))
+    print('***', bin, s)
+    out = run(f'{bin} install --strict-channel-priority --json -qyc {s}')
+    try: res = dict2obj(loads(out))
+    except:
+        print(res)
+        raise
     return nested_attr(res, 'actions.LINK')
 
 tok = os.getenv('FASTCHAN')
