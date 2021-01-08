@@ -21,7 +21,7 @@ jobs:
     runs-on: ${{ matrix.os }}-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: conda-incubator/setup-miniconda@v2
+      - uses: conda-incubator/setup-miniconda@master
         with:
           python-version: ${{ matrix.py }}
           miniforge-variant: Mambaforge
