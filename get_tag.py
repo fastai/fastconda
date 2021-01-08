@@ -13,3 +13,4 @@ def new_gh_tag(nm:Param('Package name on pypi', str)='timm',
     condavs = L(loads(run(f'mamba repoquery search {apkg} -c {achan} --json'))['result']['pkgs'])
     condatag = condavs.attrgot('version').map(version.parse)
     if force or not condatag or pypitag > max(condatag): print('v'+str(pypitag))
+

@@ -23,12 +23,14 @@ jobs:
       - uses: actions/checkout@v2
       - uses: conda-incubator/setup-miniconda@v2
         with:
-          auto-update-conda: true
+          #auto-update-conda: true
           python-version: ${{ matrix.py }}
       - name: install dependencies
         run: |
-          conda install -yq anaconda-client conda-build
-          conda install mamba -c conda-forge
+          conda install mamba -c fastchan
+          mamba install -yq anaconda-client conda-build
+          mamba install -yq -c conda-forge boa
           mamba install -c fastai ghapi fastcore fastrelease
       - name: build
-        run: . ./condabuild.sh
+        run: python condabuild.py sentencepiece
+
