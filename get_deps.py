@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 from fastcore.all import *
+import platform
 
 def inst(s, bin='mamba'):
     print('***', bin, s)
-    out = run(f'{bin} install --json -qy {s}')
+    out = run(f'{bin} install --strict-channel-priority --json -qy {s}')
     try: res = dict2obj(loads(out))
     except:
         print(out)
@@ -16,10 +17,10 @@ def anacopy(nm):
     if out.strip(): print(out.strip())
 
 links = L(inst('mamba', 'conda'))
-if sys.version_info[:2]!=(3,6):
+if sys.version_info[:2]!=(3,6) and platform.system()=='Linux':
     links += inst("-c rapidsai -c nvidia -c defaults -c conda-forge 'cudf>=0.17' 'cudatoolkit>=11' mamba")
 links += L(
-    "boa rich",
+    "boa rich anaconda-client",
     "'pytorch>=1.7' torchvision transformers",
     "sentencepiece fastai timm",
     "nbdev fastrelease ghapi fastcgi"
@@ -27,6 +28,5 @@ links += L(
 
 nms = L(f'{o.channel}/{o.name}/{o.version}' for o in links if o.channel != 'pkgs/main')
 print('***',nms)
-inst('defaults -c conda-forge anaconda-client')
 parallel(anacopy, nms, n_workers=4)
 
