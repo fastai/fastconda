@@ -3,7 +3,7 @@ from fastcore.all import *
 
 def inst(s, bin='mamba'):
     print('***', bin, s)
-    out = run(f'{bin} install --strict-channel-priority --json -qy {s}')
+    out = run(f'{bin} install --json -qy {s}')
     try: res = dict2obj(loads(out))
     except:
         print(out)
