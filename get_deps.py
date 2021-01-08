@@ -6,7 +6,7 @@ def inst(s, bin='mamba'):
     out = run(f'{bin} install --strict-channel-priority --json -qy {s}')
     try: res = dict2obj(loads(out))
     except:
-        print(res)
+        print(out)
         raise
     return nested_attr(res, 'actions.LINK')
 
