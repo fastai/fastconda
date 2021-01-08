@@ -25,6 +25,7 @@ jobs:
         with:
           python-version: ${{ matrix.py }}
           miniforge-variant: Mambaforge
+          mamba-version: "*"
       - run: mamba install -yq -c fastai -c conda-forge boa anaconda-client conda-build ghapi fastcore fastrelease
       - run: python condabuild.py sentencepiece
 
