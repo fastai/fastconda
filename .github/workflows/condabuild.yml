@@ -24,11 +24,10 @@ jobs:
       - uses: conda-incubator/setup-miniconda@master
         with:
           python-version: ${{ matrix.py }}
-          miniforge-variant: Mambaforge
-          mamba-version: "*"
-          channels: conda-forge,defaults
+          channels: fastai,fastchan,defaults
           channel-priority: strict
-
-      - run: mamba install -yq -c fastai -c conda-forge boa anaconda-client conda-build ghapi fastcore fastrelease
+      - run: |
+          conda install -yq mamba
+          mamba install -yq boa anaconda-client conda-build ghapi fastcore fastrelease
       - run: python condabuild.py sentencepiece
 
