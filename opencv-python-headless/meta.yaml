@@ -1,5 +1,5 @@
-{% set name = "sentencepiece" %}
-{% set version = "0.1.94" %}
+{% set name = "opencv-python-headless" %}
+{% set version = "4.5.1.48" %}
 
 package:
   name: {{ name|lower }}
@@ -13,22 +13,23 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
+    - numpy
 
 test:
   imports:
-    - sentencepiece
+    - cv2
   requires:
     - pip
 
 about:
-  home: https://github.com/google/sentencepiece
-  summary: SentencePiece python wrapper
+  home: https://github.com/skvark/opencv-python
+  summary: Wrapper package for OpenCV python bindings.
   license: Apache-2.0
-  license_file: LICENSE
 
 extra:
   recipe-maintainers:
     - jph00
+

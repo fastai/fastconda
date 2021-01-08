@@ -30,5 +30,6 @@ jobs:
           conda install -c fastchan mamba
           mamba install -yq -c fastai -c fastchan -c defaults boa anaconda-client conda-build ghapi fastcore fastrelease
       - name: build
-        run: python condabuild.py sentencepiece
+        run: |
+          python condabuild.py sentencepiece
 
