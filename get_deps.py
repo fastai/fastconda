@@ -3,7 +3,7 @@ from fastcore.all import *
 
 def inst(s, bin='mamba'):
     print('***', bin, s)
-    out = run(f'{bin} install --strict-channel-priority --json -qyc {s}')
+    out = run(f'{bin} install --strict-channel-priority --json -qy {s}')
     try: res = dict2obj(loads(out))
     except:
         print(res)
@@ -17,12 +17,12 @@ def anacopy(nm):
 
 links = L(inst('defaults -c conda-forge mamba', 'conda'))
 if sys.version_info[:2]!=(3,6):
-    links += inst("rapidsai -c nvidia -c defaults -c conda-forge 'cudf>=0.17' 'cudatoolkit>=11' mamba")
+    links += inst("-c rapidsai -c nvidia -c defaults -c conda-forge 'cudf>=0.17' 'cudatoolkit>=11' mamba")
 links += L(
-    "defaults -c conda-forge boa rich",
-    "pytorch -c defaults -c conda-forge 'pytorch>=1.7' torchvision transformers",
-    "pytorch -c fastai -c defaults -c conda-forge sentencepiece fastai timm",
-    "pytorch -c fastai -c defaults -c conda-forge nbdev fastrelease ghapi fastcgi"
+    "boa rich",
+    "'pytorch>=1.7' torchvision transformers",
+    "sentencepiece fastai timm",
+    "nbdev fastrelease ghapi fastcgi"
 ).map(inst).concat()
 
 nms = L(f'{o.channel}/{o.name}/{o.version}' for o in links if o.channel != 'pkgs/main')

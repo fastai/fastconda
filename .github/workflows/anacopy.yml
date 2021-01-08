@@ -15,5 +15,11 @@ jobs:
         os: [ubuntu, macos]
     runs-on: ${{ matrix.os }}-latest
     steps:
+      - uses: conda-incubator/setup-miniconda@master
+        with:
+          python-version: ${{ matrix.py }}
+          channels: pytorch,fastai,defaults,conda-forge
+          channel-priority: strict
       - uses: actions/checkout@v2
-      - run: bash get_deps.sh ${{ matrix.py }}
+      - run: python get_deps.py
+
