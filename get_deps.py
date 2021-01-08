@@ -15,7 +15,7 @@ def anacopy(nm):
     code,out = run(f'anaconda -t {tok} copy {nm}', ignore_ex=True)
     if out.strip(): print(out.strip())
 
-links = L(inst('defaults -c conda-forge mamba', 'conda'))
+links = L(inst('mamba', 'conda'))
 if sys.version_info[:2]!=(3,6):
     links += inst("-c rapidsai -c nvidia -c defaults -c conda-forge 'cudf>=0.17' 'cudatoolkit>=11' mamba")
 links += L(

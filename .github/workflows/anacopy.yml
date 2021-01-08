@@ -6,6 +6,9 @@ on:
 
 jobs:
   copy:
+    defaults:
+      run:
+        shell: bash -l {0}
     env:
       FASTCHAN: ${{ secrets.FASTCHAN }}
     strategy:
