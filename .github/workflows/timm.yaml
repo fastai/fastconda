@@ -24,7 +24,6 @@ jobs:
         run: |
           conda install -yq mamba
           mamba install -yq anaconda-client conda-build fastrelease
-          #mamba install -c fastai ghapi fastcore fastrelease
           mamba install -yq -c cbillington -c defaults setuptools-conda
       - name: Build and Publish
         run: ./build_timm.sh
