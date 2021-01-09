@@ -28,5 +28,6 @@ jobs:
       - run: |
           conda install -yq mamba
           mamba install -yq boa anaconda-client conda-build ghapi fastcore fastrelease
-      - run: python condabuild.py sentencepiece
+      - run: |
+          echo 'sentencepiece opencv-python-headless' | xargs -n1 -P2 python condabuild.py
 
