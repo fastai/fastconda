@@ -19,10 +19,12 @@ jobs:
         with:
           auto-update-conda: true
           python-version: 3.8
+          channels: fastai,fastchan,defaults
       - name: Install dependencies
         run: |
-          conda install -yq anaconda-client conda-build
-          conda install mamba -c conda-forge
-          mamba install -c fastai ghapi fastcore fastrelease
+          conda install -yq mamba
+          mamba install -yq anaconda-client conda-build fastrelease
+          #mamba install -c fastai ghapi fastcore fastrelease
+          mamba install -yq -c cbillington -c defaults setuptools-conda
       - name: Build and Publish
         run: ./build_timm.sh
