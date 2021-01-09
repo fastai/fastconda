@@ -30,6 +30,6 @@ jobs:
           mamba install -yq boa anaconda-client conda-build ghapi fastrelease
       - run: |
           #echo 'sentencepiece opencv-python-headless' | xargs -n1 -P2 python condabuild.py
-          python condabuild.py sentencepiece
           python condabuild.py opencv-python-headless
+          python condabuild.py sentencepiece
 
