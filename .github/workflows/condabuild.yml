@@ -27,7 +27,8 @@ jobs:
           channels: fastai,fastchan,defaults
       - run: |
           conda install -yq mamba
-          mamba install -yq boa anaconda-client conda-build ghapi fastcore fastrelease
+          mamba install -yq boa anaconda-client conda-build ghapi fastrelease
       - run: |
-          echo 'sentencepiece opencv-python-headless' | xargs -n1 -P2 python condabuild.py
+          #echo 'sentencepiece opencv-python-headless' | xargs -n1 -P2 python condabuild.py
+          python condabuild.py opencv-python-headless
 
