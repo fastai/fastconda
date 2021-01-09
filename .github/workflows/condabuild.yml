@@ -16,8 +16,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        py: [3.6, 3.7, 3.8]
-        os: [ubuntu, windows, macos]
+        py:  [3.6, 3.7, 3.8]
+        os:  [ubuntu, windows, macos]
+        pkg: [opencv-python-headless, sentencepiece]
     runs-on: ${{ matrix.os }}-latest
     steps:
       - uses: actions/checkout@v2
@@ -31,8 +32,5 @@ jobs:
           conda install -yq mamba
           mamba install -yq boa anaconda-client conda-build ghapi fastrelease
       - name: build
-        run: |
-          echo 'sentencepiece opencv-python-headless' | xargs -n1 -P2 python condabuild.py
-          #python condabuild.py opencv-python-headless
-          #python condabuild.py sentencepiece
+        run: python condabuild.py ${{ matrix.pkg }}
 
