@@ -31,4 +31,5 @@ jobs:
       - run: |
           #echo 'sentencepiece opencv-python-headless' | xargs -n1 -P2 python condabuild.py
           python condabuild.py opencv-python-headless
+          python condabuild.py sentencepiece
 
