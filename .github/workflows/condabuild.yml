@@ -25,7 +25,6 @@ jobs:
         with:
           python-version: ${{ matrix.py }}
           channels: fastai,fastchan,defaults
-          channel-priority: strict
       - run: |
           conda install -yq mamba
           mamba install -yq boa anaconda-client conda-build ghapi fastcore fastrelease
