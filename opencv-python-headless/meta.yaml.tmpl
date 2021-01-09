@@ -1,5 +1,5 @@
 {% set name = "opencv-python-headless" %}
-{% set version = "4.5.1.48" %}
+{% set version = "VERSION" %}
 
 package:
   name: {{ name|lower }}
@@ -13,9 +13,8 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
   run:
-    - python >=3.6
     - numpy
 
 test:
