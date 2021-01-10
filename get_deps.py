@@ -23,7 +23,7 @@ if __name__=='__main__':
         links += inst("-c rapidsai -c nvidia -c defaults -c conda-forge 'cudf>=0.17' 'cudatoolkit>=11' mamba")
     links += L(
         "boa rich anaconda-client",
-        "'pytorch>=1.7' 'torchvision>0.7' transformers",
+        "'pytorch>=1.7' 'torchvision>0.7' transformers pynvml",
         "sentencepiece fastai timm",
         "nbdev fastrelease ghapi fastcgi",
         "-c fastai -c defaults --override-channels albumentations",
