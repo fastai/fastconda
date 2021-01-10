@@ -24,7 +24,7 @@ if __name__=='__main__':
     links += L(
         "boa rich anaconda-client",
         "'pytorch>=1.7' torchvision transformers",
-        "sentencepiece fastai",
+        "sentencepiece fastai timm",
         "nbdev fastrelease ghapi fastcgi",
         "-c cbillington -c defaults setuptools-conda"
     ).map(inst).concat()
