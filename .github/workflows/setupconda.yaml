@@ -27,6 +27,6 @@ jobs:
       - name: Build and Publish
         run: |
           ./setupconda.sh rwightman/pytorch-image-models timm '--conda-name-differences torch:pytorch -c pytorch --noarch .' v
-          ./setupconda.sh albumentations-team/albumentations albumentations '--conda-name-differences opencv-python:opencv-python-headless oopencv-contrib-python:opencv-python-headless pencv:opencv-python-headless .'
-          ./setupconda.sh aleju/imgaug imgaug '--conda-name-differences opencv-python:opencv-python-headless opencv-contrib-python:opencv-python-headless opencv:opencv-python-headless .'
+          ./setupconda.sh albumentations-team/albumentations albumentations '--conda-name-differences opencv-python:opencv-python-headless,opencv-contrib-python:opencv-python-headless,opencv:opencv-python-headless .'
+          ./setupconda.sh aleju/imgaug imgaug '--conda-name-differences opencv-python:opencv-python-headless,opencv-contrib-python:opencv-python-headless,opencv:opencv-python-headless .'
 
