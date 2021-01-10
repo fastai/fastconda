@@ -26,7 +26,7 @@ if __name__=='__main__':
         "'pytorch>=1.7' 'torchvision>0.7' transformers",
         "sentencepiece fastai timm",
         "nbdev fastrelease ghapi fastcgi",
-        "-c fastai -c defaults -c conda-forge albumentations",
+        "-c fastai -c defaults --override-channels albumentations",
         "-c cbillington -c defaults setuptools-conda"
     ).map(inst).concat()
 
