@@ -27,6 +27,6 @@ jobs:
           mamba install -yq -c cbillington -c defaults setuptools-conda
       - name: Build and Publish
         run: |
-          ./setupconda.sh rwightman/pytorch-image-models timm v
-          ./setupconda.sh albumentations-team/albumentations albumentations
+          ./setupconda.sh rwightman/pytorch-image-models timm '--conda-name-differences torch:pytorch -c pytorch --noarch .' v
+          ./setupconda.sh albumentations-team/albumentations albumentations '.'
 
