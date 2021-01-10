@@ -25,8 +25,8 @@ if __name__=='__main__':
         "boa rich anaconda-client",
         "'pytorch>=1.7' 'torchvision>0.7' transformers",
         "sentencepiece fastai timm",
-        "albumentations",
         "nbdev fastrelease ghapi fastcgi",
+        "-c fastai -c defaults -c conda-forge albumentations",
         "-c cbillington -c defaults setuptools-conda"
     ).map(inst).concat()
 
