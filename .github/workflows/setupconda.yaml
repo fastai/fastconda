@@ -27,5 +27,5 @@ jobs:
       - name: Build and Publish
         run: |
           ./setupconda.sh rwightman/pytorch-image-models timm '--conda-name-differences torch:pytorch -c pytorch --noarch .' v
-          ./setupconda.sh albumentations-team/albumentations albumentations '.'
+          ./setupconda.sh albumentations-team/albumentations albumentations '--conda-name-differences opencv:opencv-python-headless .'
 
