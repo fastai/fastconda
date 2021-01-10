@@ -26,4 +26,7 @@ jobs:
           mamba install -yq anaconda-client conda-build fastrelease
           mamba install -yq -c cbillington -c defaults setuptools-conda
       - name: Build and Publish
-        run: ./build_timm.sh
+        run: |
+          ./setupconda.sh rwightman/pytorch-image-models timm v
+          ./setupconda.sh albumentations-team/albumentations albumentations
+

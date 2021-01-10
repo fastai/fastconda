@@ -26,6 +26,7 @@ if __name__=='__main__':
         "'pytorch>=1.7' torchvision transformers",
         "sentencepiece fastai timm",
         "nbdev fastrelease ghapi fastcgi"
+        "-c cbillington -c defaults setuptools-conda"
     ).map(inst).concat()
 
     nms = L(f'{o.channel}/{o.name}/{o.version}' for o in links if o.channel != 'pkgs/main')

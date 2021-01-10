@@ -1,0 +1,35 @@
+{% set name = "opencv-python-headless" %}
+{% set version = "4.5.1.48" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+build:
+  number: 0
+  binary_relocation: false
+  detect_binary_files_with_prefix: false
+
+requirements:
+  host:
+    - pip
+    - python
+  run:
+    - numpy
+    - python
+
+test:
+  imports:
+    - cv2
+  requires:
+    - pip
+
+about:
+  home: https://github.com/skvark/opencv-python
+  summary: Wrapper package for OpenCV python bindings.
+  license: Apache-2.0
+
+extra:
+  recipe-maintainers:
+    - jph00
+
