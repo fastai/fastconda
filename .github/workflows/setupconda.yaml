@@ -28,4 +28,5 @@ jobs:
         run: |
           ./setupconda.sh rwightman/pytorch-image-models timm '--conda-name-differences torch:pytorch -c pytorch --noarch .' v
           ./setupconda.sh albumentations-team/albumentations albumentations '--conda-name-differences opencv:opencv-python-headless .'
+          ./setupconda.sh aleju/imgaug imgaug '--conda-name-differences opencv:opencv-python-headless .'
 
