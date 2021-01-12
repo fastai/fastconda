@@ -1,9 +1,9 @@
 #!/usr/bin/env python
-
 from pathlib import Path
 import yaml
-from fastrelease.conda import latest_pypi, pypi_json
-from fastcore.all import ifnone, patch, store_attr , compose, L, call_parse, Param
+from ghapi.actions import *
+from fastrelease.conda import latest_pypi, pypi_json, anaconda_upload
+from fastcore.all import ifnone, patch, store_attr , compose, L, call_parse, Param, run
 
 
 @patch
@@ -54,11 +54,17 @@ class CondaBuild:
     def from_yaml(cls, path): 
         p = Path(path)
         assert p.is_file() and p.exists(), f"Did not find file: {path}."
-        for d in p.yml2d(): cls(**d).create_build_files()
+        cb = L(cls(**d) for d in p.yml2d())
+        for c in cb: c.create_build_files()
+        return cb
 
 @call_parse  
-def main(path:Param('Path to build file', str)='build.yaml'): CondaBuild.from_yaml(path)
-
-
-
+def main(path:Param('Path to build file', str)='build.yaml',
+         args:Param("Extra args to pass to `build`",str)=''): 
+    cb = CondaBuild.from_yaml(path)
+    for c in cb:
+        ver = c.ver
+        name = c.path
+        with actions_group(f'Build {name}'): print(run(f'conda build {name} {args}'))
+        with actions_group(f'Upload {name}'): print(anaconda_upload(name, ver, env_token='ANACONDA_TOKEN'))
 
