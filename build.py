@@ -10,10 +10,16 @@ from fastcore.all import ifnone, patch, store_attr , compose, L, call_parse, Par
 def wlns(self:Path, lst:list): 
     with self.open('w') as f: f.writelines(lst)
 
+# @patch
+# def d2yml(self:Path, d):
+#     yaml.SafeDumper.ignore_aliases = lambda *args : True
+#     with self.open('w') as f: yaml.safe_dump(d, f)
+
 @patch
 def d2yml(self:Path, d):
     yaml.SafeDumper.ignore_aliases = lambda *args : True
-    with self.open('w') as f: yaml.safe_dump(d, f)
+    with self.open('w') as f: f.write('---\n')
+    with self.open('a') as f: yaml.safe_dump(d, f)
         
 @patch
 def yml2d(self:Path):
@@ -67,4 +73,3 @@ def main(path:Param('Path to build file', str)='build.yaml',
         name = c.path
         with actions_group(f'Build {name}'): print(run(f'conda build {name} {args}'))
         with actions_group(f'Upload {name}'): print(anaconda_upload(name, ver, env_token='ANACONDA_TOKEN'))
-
