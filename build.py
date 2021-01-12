@@ -10,16 +10,11 @@ from fastcore.all import ifnone, patch, store_attr , compose, L, call_parse, Par
 def wlns(self:Path, lst:list): 
     with self.open('w') as f: f.writelines(lst)
 
-# @patch
-# def d2yml(self:Path, d):
-#     yaml.SafeDumper.ignore_aliases = lambda *args : True
-#     with self.open('w') as f: yaml.safe_dump(d, f)
-
 @patch
 def d2yml(self:Path, d):
     yaml.SafeDumper.ignore_aliases = lambda *args : True
-    with self.open('w') as f: f.write('---\n')
-    with self.open('a') as f: yaml.safe_dump(d, f)
+    # with self.open('w') as f: f.write('---\n')
+    with self.open('w') as f: yaml.safe_dump(d, f, sort_keys=False)
         
 @patch
 def yml2d(self:Path):
@@ -41,7 +36,7 @@ class CondaBuild:
         self.path = _mkdir(ifnone(path,self.pypinm))
         self.meta ={'package': {'name': self.pypinm, 'version': self.ver},
                     'build':{'number':0, 'binary_relocation':False, 'detect_binary_files_with_prefix':False},
-                    'requirents':{'host': ['pip', 'python'], 'run':['python']+list(L(self.deps))},
+                    'requirements':{'host': ['pip', 'python'], 'run':['python']+list(L(self.deps))},
                     'test':{'imports': [self.import_nm], 'requires':['pip']},
                     'about':{'home':self.info['home_page'], 'summary':self.info['summary'], 'license':self.info['license']},
                     'extra':{'recipe-maintainers': ['jph00']}
