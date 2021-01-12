@@ -32,5 +32,7 @@ jobs:
           conda install -yq mamba
           mamba install -yq boa anaconda-client conda-build ghapi fastrelease
       - name: build
-        run: python condabuild.py ${{ matrix.pkg }}
+        run: |
+          python genfiles.py
+          python condabuild.py ${{ matrix.pkg }}
 
