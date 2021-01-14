@@ -14,7 +14,7 @@ sentencepiece | ![](https://img.shields.io/pypi/v/sentencepiece) |  ![](https://
 
 Builds a conda package that simply installs a pip package (currently just does sentencepiece).
 
-## build_timm
+## setup_conda
 
 Creates a conda package from a source repo using `setuptools-conda` (currently just does timm). Pass `--force` to build even if release already exists in fastai channel.
 
