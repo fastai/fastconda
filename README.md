@@ -8,6 +8,8 @@ Package Name | Pypi | GitHub | Conda [fastai channel](https://anaconda.org/fasta
 -- | -- | -- | -- | --
 timm |  ![](https://img.shields.io/pypi/v/timm) | ![](https://img.shields.io/github/v/release/rwightman/pytorch-image-models) | ![](https://img.shields.io/conda/vn/fastai/timm) | ![timm](https://github.com/fastai/fastconda/workflows/timm/badge.svg)
 sentencepiece | ![](https://img.shields.io/pypi/v/sentencepiece) |  ![](https://img.shields.io/github/v/release/google/sentencepiece) | ![](https://img.shields.io/conda/vn/fastai/sentencepiece) | ![condabuild](https://github.com/fastai/fastconda/workflows/condabuild/badge.svg)
+albumentations | ![](https://img.shields.io/pypi/v/albumentations) |  ![](https://img.shields.io/github/v/release/albumentations-team/albumentations) | ![](https://img.shields.io/conda/vn/fastai/albumentations) | ![condabuild]()
+imgaug | ![](https://img.shields.io/pypi/v/imgaug) |  ![](https://img.shields.io/github/v/release/aleju/imgaug) | ![](https://img.shields.io/conda/vn/fastai/imgaug) | ![condabuild]()
 
 
 ## condabuild
