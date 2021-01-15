@@ -68,7 +68,7 @@ _see [setupconda.yaml](.github/workflows/setupconda.yaml) for example of args_
 
 _When a maintaiend anconda package already exists._
 
-In situations where there is a relaiable and maintained conda package already present in another channel, we can copy this package and all its dependencies to another channel.  This is desirable when you want to simplify and speed up the installation of packages by placing all dependencies in a single channel.  This process is carried out via [anacopy.yml](.github/workflows/anacopy.yml).  We find all dependencies for a particular package by doing a dry run of a conda installation, which uses the conda solver to fetch all the dependencies with appropriate version numbers, and then copy the appropriate packages using `anaconda copy`.
+In situations where there is a relaiable and maintained conda package already present in another channel, we can copy this package and all its dependencies to another channel.  This is desirable when you want to simplify and speed up the installation of packages by placing all dependencies in a single channel.  This process is carried out via [anacopy.yml](.github/workflows/anacopy.yml).  We find all dependencies for a particular package by doing a conda installation, which uses the conda solver to find all the dependencies with appropriate version numbers, and then copy the appropriate packages using `anaconda copy`.
 
 You can run this locally:
 
