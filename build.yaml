@@ -1,5 +1,4 @@
 - pypinm: opencv-python-headless
-  import_nm: cv2 # Optional: if not specified will default to the same as pypinm
-  deps: [numpy]  # Optional: if not specified will just be python
-  path: opencv-python-headless # Optional: if not specified, files will be placed in a directory named after `pypinm`
+  import_nm: cv2
+  deps: [numpy]
 - pypinm: sentencepiece
