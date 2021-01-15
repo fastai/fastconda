@@ -18,6 +18,7 @@ jobs:
       matrix:
         py:  [3.6, 3.7, 3.8]
         os:  [ubuntu, windows, macos]
+        nm: [opencv-python-headless, sentencepiece]
     runs-on: ${{ matrix.os }}-latest
     steps:
       - uses: actions/checkout@v2
@@ -30,5 +31,6 @@ jobs:
         run: |
           conda install -yq mamba
           mamba install -yq boa anaconda-client conda-build ghapi fastrelease
+          mamba update libiconv
       - name: build
-        run: python build.py
+        run: python build.py --pypinm ${{ matrix.nm }}
