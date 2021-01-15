@@ -26,6 +26,7 @@ There are three different ways a conda package can be sourced into an Ancaconda 
 
 TODO: Mention how dependencies are determined, perhaps with dryrun?  
 TODO: figure out why dryrun is not being used?
+TODO: relate these to the table above?
 
 TODO: mention this?
 
