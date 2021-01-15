@@ -2,7 +2,7 @@
 
 > Get packages onto your conda channel faster
 
-## Status
+#Status
 
 TODO: Update Badges
 
@@ -14,11 +14,17 @@ albumentations | ![](https://img.shields.io/pypi/v/albumentations) |  ![](https:
 imgaug | ![](https://img.shields.io/pypi/v/imgaug) |  ![](https://img.shields.io/github/v/release/aleju/imgaug) | ![](https://img.shields.io/conda/vn/fastai/imgaug) | ![condabuild]()
 
 
-## Build Process
+# Build Process
 
-We are using three different ways for sourcing a conda package into an Ancaconda repo.
+We are using three different ways for sourcing a conda package into an Ancaconda repo:
 
-### When there are C dependencies: `conda build`
+1. [conda build](#conda-build): When there are C dependencies.
+2. [setuptools-conda](#setuptools-conda): For pure python packages.
+3. [anaconda copy](#anaconda-copy): When a maintaiend anconda package already exists.
+
+## conda build
+
+_When there are C dependencies._
 
 Build a conda package by first installing the appropriate pip package(s) in a fresh conda environment, and then use `conda build` to build a package based on this environment.  We do this for packages that have C dependencies and need thus need binaries created for different platforms. This build process is specified in [condabuild.yml](.github/workflows/condabuild.yml).  This type of build requires a specific directory structure with several metadata files which amounts to a fair amount of biolerplate. For this reason, we dynamically generate all of this boilerplate based on the configuration file [build.yaml](./build.yaml)
 
@@ -43,10 +49,11 @@ You can run this locally with:
 
 > python build.py
 
-_see [condabuild.yml](.github/workflows/condabuild.yml) for necessary environment setup_
+_see [condabuild.yml](.github/workflows/condabuild.yml) for necessary environment setup._
 
+##  setuptools-conda
 
-### For pure python packages: `setuptools-conda`
+_For pure python packages._
 
 For python packages that are pure-python that do not require binaries, we can instead create a cross-platform conda package using `setuptools-conda`.  This build process is specified in [setupconda.yaml](.github/workflows/setupconda.yaml).  
 
@@ -56,7 +63,9 @@ You can run this locally with:
 
 _see [setupconda.yaml](.github/workflows/setupconda.yaml) for example of args_
 
-### When a maintaiend anconda package already exists: `anaconda copy`
+##  anaconda copy
+
+_When a maintaiend anconda package already exists._
 
 In situations where there is a relaiable and maintained conda package already present in another channel, we can copy this package and all its dependencies to another channel.  This is desirable when you want to simplify and speed up the installation of packages by placing all dependencies in a single channel.  This process is carried out via [anacopy.yml](.github/workflows/anacopy.yml).  We find all dependencies for a particular package by doing a dry run of a conda installation, which uses the conda solver to fetch all the dependencies with appropriate version numbers, and then copy the appropriate packages using `anaconda copy`.
 
@@ -65,6 +74,8 @@ You can run this locally:
 >  python get_deps.py
 
 _See [anacopy.yml](.github/workflows/anacopy.yml) for the full workflow._
+
+
 
 ---
 
