@@ -25,7 +25,7 @@ jobs:
         with:
           python-version: ${{ matrix.py }}
           channels: fastai,defaults,conda-forge
-          #miniforge-version: latest
+          miniforge-version: latest
       - name: install deps
         run: |
           conda install -yq mamba
