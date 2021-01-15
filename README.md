@@ -4,6 +4,8 @@
 
 ## Status
 
+TODO: Update Badges
+
 Package Name | Pypi | GitHub | Conda [fastai channel](https://anaconda.org/fastai/repo) | Actions |
 -- | -- | -- | -- | --
 timm |  ![](https://img.shields.io/pypi/v/timm) | ![](https://img.shields.io/github/v/release/rwightman/pytorch-image-models) | ![](https://img.shields.io/conda/vn/fastai/timm) | ![timm](https://github.com/fastai/fastconda/workflows/timm/badge.svg)
