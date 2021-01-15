@@ -20,7 +20,7 @@ imgaug | ![](https://img.shields.io/pypi/v/imgaug) |  ![](https://img.shields.io
 ### Copies 
 
 Package | Pypi | Conda [fastchan channel](https://anaconda.org/fastai/repo)
--- | -- | -- | --
+-- | -- | -- 
 cudf | ![](https://img.shields.io/pypi/v/cudf ) | ![](https://img.shields.io/conda/vn/fastchan/cudf )
 cudatoolkit | N/A | ![](https://img.shields.io/conda/vn/fastchan/cudatoolkit )
 mamba | ![](https://img.shields.io/pypi/v/mamba ) | ![](https://img.shields.io/conda/vn/fastchan/mamba )
