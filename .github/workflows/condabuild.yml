@@ -34,5 +34,4 @@ jobs:
       - name: build
         run: |
           python build.py
-          # python build.py ${{ matrix.pkg }}
 
