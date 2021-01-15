@@ -2,16 +2,39 @@
 
 > Get packages onto your conda channel faster
 
-## Status
+# Status
 
-TODO: Update Badges
+ ![CI](https://github.com/fastai/fastconda/workflows/setupconda/badge.svg) ![CI](https://github.com/fastai/fastconda/workflows/condabuild/badge.svg) ![anacopy](https://github.com/fastai/fastconda/workflows/anacopy/badge.svg)
 
-Package Name | Pypi | GitHub | Conda [fastai channel](https://anaconda.org/fastai/repo) | Actions |
--- | -- | -- | -- | --
-timm |  ![](https://img.shields.io/pypi/v/timm) | ![](https://img.shields.io/github/v/release/rwightman/pytorch-image-models) | ![](https://img.shields.io/conda/vn/fastai/timm) | ![timm](https://github.com/fastai/fastconda/workflows/timm/badge.svg)
-sentencepiece | ![](https://img.shields.io/pypi/v/sentencepiece) |  ![](https://img.shields.io/github/v/release/google/sentencepiece) | ![](https://img.shields.io/conda/vn/fastai/sentencepiece) | ![condabuild](https://github.com/fastai/fastconda/workflows/condabuild/badge.svg)
-albumentations | ![](https://img.shields.io/pypi/v/albumentations) |  ![](https://img.shields.io/github/v/release/albumentations-team/albumentations) | ![](https://img.shields.io/conda/vn/fastai/albumentations) | ![condabuild]()
-imgaug | ![](https://img.shields.io/pypi/v/imgaug) |  ![](https://img.shields.io/github/v/release/aleju/imgaug) | ![](https://img.shields.io/conda/vn/fastai/imgaug) | ![condabuild]()
+### Builds:
+
+Package Name | Pypi | GitHub | Conda [fastai channel](https://anaconda.org/fastai/repo)
+-- | -- | -- | -- 
+sentencepiece | ![](https://img.shields.io/pypi/v/sentencepiece) |  ![](https://img.shields.io/github/v/release/google/sentencepiece) | ![](https://img.shields.io/conda/vn/fastai/sentencepiece)
+opencv-python-headless | ![](https://img.shields.io/pypi/v/opencv-python-headless) |  N/A | ![](https://img.shields.io/conda/vn/fastai/opencv-python-headless)
+timm |  ![](https://img.shields.io/pypi/v/timm) | ![](https://img.shields.io/github/v/release/rwightman/pytorch-image-models) | ![](https://img.shields.io/conda/vn/fastai/timm)
+albumentations | ![](https://img.shields.io/pypi/v/albumentations) |  ![](https://img.shields.io/github/v/release/albumentations-team/albumentations) | ![](https://img.shields.io/conda/vn/fastai/albumentations) 
+imgaug | ![](https://img.shields.io/pypi/v/imgaug) |  ![](https://img.shields.io/github/v/release/aleju/imgaug) | ![](https://img.shields.io/conda/vn/fastai/imgaug)
+
+
+### Copies 
+
+Package | Pypi | Conda [fastchan channel](https://anaconda.org/fastai/repo)
+-- | -- | -- | --
+cudf | ![](https://img.shields.io/pypi/v/cudf ) | ![](https://img.shields.io/conda/vn/fastchan/cudf )
+cudatoolkit | N/A | ![](https://img.shields.io/conda/vn/fastchan/cudatoolkit )
+mamba | ![](https://img.shields.io/pypi/v/mamba ) | ![](https://img.shields.io/conda/vn/fastchan/mamba )
+pytorch | ![](https://img.shields.io/pypi/v/pytorch ) | ![](https://img.shields.io/conda/vn/fastchan/pytorch)
+torchvision | ![](https://img.shields.io/pypi/v/torchvision ) | ![](https://img.shields.io/conda/vn/fastchan/torchvision)
+transformers | ![](https://img.shields.io/pypi/v/transformers ) | ![](https://img.shields.io/conda/vn/fastchan/transformers)
+rich | ![](https://img.shields.io/pypi/v/rich ) | ![](https://img.shields.io/conda/vn/fastchan/rich )
+sentencepiece | ![](https://img.shields.io/pypi/v/sentencepiece) | ![](https://img.shields.io/conda/vn/fastchan/sentencepiece)
+fastai | ![](https://img.shields.io/pypi/v/fastai ) | ![](https://img.shields.io/conda/vn/fastchan/fastai )
+timm | ![](https://img.shields.io/pypi/v/timm ) | ![](https://img.shields.io/conda/vn/fastchan/timm )
+nbdev | ![](https://img.shields.io/pypi/v/nbdev ) | ![](https://img.shields.io/conda/vn/fastchan/nbdev )
+fastrelease | ![](https://img.shields.io/pypi/v/fastrelease) | ![](https://img.shields.io/conda/vn/fastchan/fastrelease)
+ghapi | ![](https://img.shields.io/pypi/v/ghapi ) | ![](https://img.shields.io/conda/vn/fastchan/ghapi )
+fastcgi | ![](https://img.shields.io/pypi/v/fastcgi) | ![](https://img.shields.io/conda/vn/fastchan/fastcgi)
 
 
 
