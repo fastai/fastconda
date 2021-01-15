@@ -26,7 +26,6 @@ jobs:
           mamba install -yq anaconda-client conda-build fastrelease setuptools-conda
       - name: Build and Publish
         run: |
-          ./setupconda.sh rwightman/pytorch-image-models timm '--conda-name-differences torch:pytorch -c pytorch --noarch .' v
-          ./setupconda.sh albumentations-team/albumentations albumentations '--conda-name-differences opencv-python:opencv-python-headless,opencv-contrib-python:opencv-python-headless,opencv:opencv-python-headless --noarch .'
-          ./setupconda.sh aleju/imgaug imgaug '--conda-name-differences opencv-python:opencv-python-headless,opencv-contrib-python:opencv-python-headless,opencv:opencv-python-headless --noarch .'
-
+          ./setupconda.sh timm '--conda-name-differences torch:pytorch -c pytorch --noarch .'
+          ./setupconda.sh albumentations '--conda-name-differences opencv-python:opencv-python-headless,opencv-contrib-python:opencv-python-headless,opencv:opencv-python-headless --noarch .'
+          ./setupconda.sh imgaug '--conda-name-differences opencv-python:opencv-python-headless,opencv-contrib-python:opencv-python-headless,opencv:opencv-python-headless --noarch .'
