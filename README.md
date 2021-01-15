@@ -50,7 +50,7 @@ _see [condabuild.yml](.github/workflows/condabuild.yml) for necessary environmen
 
 For python packages that are pure-python that do not require binaries, we can instead create a cross-platform conda package using `setuptools-conda`.  This build process is specified in [setupconda.yaml](.github/workflows/setupconda.yaml).  
 
-You can run this locally:
+You can run this locally with:
 
 > ./setupconda.sh {args}
 
