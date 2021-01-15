@@ -30,7 +30,6 @@ jobs:
       - name: install deps
         run: |
           conda install -yq mamba
-          mamba install -yq boa anaconda-client conda-build ghapi fastrelease
-          mamba update libiconv
+          mamba install -yq boa anaconda-client conda-build ghapi fastrelease libiconv
       - name: build
         run: python build.py --pypinm ${{ matrix.nm }}
