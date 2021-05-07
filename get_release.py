@@ -6,7 +6,8 @@ from fastcore.all import *
 
 def latest_conda(achan:str='', apkg:str=None):
     condavs = L(loads(run(f'mamba repoquery search {apkg} {achan} --json'))['result']['pkgs'])
-    return max(condavs.attrgot('version').map(version.parse))
+    vers = condavs.attrgot('version').map(version.parse)
+    return max(vers or [0])
 
 @call_parse
 def get_pypi_source(pypinm, 
