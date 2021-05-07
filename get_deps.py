@@ -23,7 +23,8 @@ if __name__=='__main__':
         links += inst("-c rapidsai -c nvidia -c defaults -c conda-forge 'cudf>=0.17' 'cudatoolkit>=11' mamba")
     links += L(
         "boa rich anaconda-client",
-        "'pytorch>=1.7' 'torchvision>0.7' transformers pynvml",
+        "'pytorch>=1.7' 'torchvision>0.7' pynvml",
+        "-c huggingface -c pytorch -c nvidia -c defaults -c conda-forge transformers datasets accelerate",
         "sentencepiece fastai timm",
         "nbdev fastrelease ghapi fastcgi",
         "-c fastai -c defaults --override-channels albumentations",
@@ -33,4 +34,3 @@ if __name__=='__main__':
     nms = L(f'{o.channel}/{o.name}/{o.version}' for o in links if o.channel != 'pkgs/main')
     print('***',nms)
     parallel(anacopy, nms, n_workers=4)
-
