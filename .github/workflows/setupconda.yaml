@@ -2,7 +2,7 @@ name: setupconda
 on:
   workflow_dispatch:
   schedule:
-    - cron: "* */6 * * *"
+    - cron: "46 1/13 * * *"
 
 env:
   ANACONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
