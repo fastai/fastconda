@@ -3,7 +3,8 @@ from fastcore.all import *
 import platform
 
 def inst(s, bin='mamba'):
-    cmd = f'{bin} install --strict-channel-priority --json -qy {s}'
+    cmd = f'{bin} install --json -qy {s}'
+    #cmd = f'{bin} install --strict-channel-priority --json -qy {s}'
     print(cmd)
     out = run(cmd)
     try: res = dict2obj(loads(out))
