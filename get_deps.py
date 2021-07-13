@@ -25,7 +25,7 @@ if __name__=='__main__':
         "boa rich anaconda-client",
         "'pytorch>=1.7' 'torchvision>0.7' pynvml",
         "-c huggingface -c pytorch -c nvidia -c defaults -c conda-forge transformers datasets accelerate",
-        "sentencepiece fastai timm",
+        "sentencepiece 'spacy>=3.1' fastai timm",
         "nbdev fastrelease ghapi fastcgi",
         "-c fastai -c defaults --override-channels albumentations",
         "-c cbillington -c defaults setuptools-conda"
