@@ -20,7 +20,7 @@ def anacopy(nm):
 
 if __name__=='__main__':
     links = L(inst('mamba', 'conda'))
-    if sys.version_info[:2]!=(3,6) and platform.system()=='Linux':
+    if sys.version_info[:2] not in ((3,6),(3,9)) and platform.system()=='Linux':
         links += inst("-c rapidsai -c nvidia -c defaults -c conda-forge 'cudf>=0.17' 'cudatoolkit>=11' mamba")
     links += L(
         "boa rich anaconda-client",
