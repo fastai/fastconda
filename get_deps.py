@@ -11,6 +11,7 @@ def inst(s, bin='mamba'):
     except:
         print(out)
         raise
+    print(out)
     return nested_attr(res, 'actions.LINK')
 
 tok = os.getenv('FASTCHAN')
@@ -20,8 +21,8 @@ def anacopy(nm):
 
 if __name__=='__main__':
     links = L(inst('mamba', 'conda'))
-    if sys.version_info[:2] not in ((3,6),(3,9)) and platform.system()=='Linux':
-        links += inst("-c rapidsai -c nvidia -c defaults -c conda-forge 'cudf>=0.17' 'cudatoolkit>=11' mamba")
+    #if sys.version_info[:2] not in ((3,6),(3,9)) and platform.system()=='Linux':
+    #    links += inst("-c rapidsai -c nvidia -c defaults -c conda-forge 'cudf>=0.17' 'cudatoolkit>=11' mamba")
     links += L(
         "boa rich anaconda-client",
         "'pytorch>=1.7' torchaudio 'torchvision>0.7' pynvml",
