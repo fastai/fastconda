@@ -11,7 +11,7 @@ def inst(s, bin='mamba'):
     except:
         print(out)
         raise
-    print(out)
+    #print(out)
     return nested_attr(res, 'actions.LINK')
 
 tok = os.getenv('FASTCHAN')
