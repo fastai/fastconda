@@ -16,7 +16,7 @@ def inst(s, bin='mamba'):
 
 tok = os.getenv('FASTCHAN')
 def anacopy(nm):
-    if nm.startwith('python'): return
+    if nm.startswith('python'): return
     code,out = run(f'anaconda -t {tok} copy {nm}', ignore_ex=True)
     if out.strip(): print(out.strip())
 
