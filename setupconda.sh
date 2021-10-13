@@ -2,7 +2,7 @@
 set -e
 
 rm -rf tmp
-python get_release.py $1 --dest 'tmp' --force
+python get_release.py $1 --force
 
 if [ -d "tmp" ]; then  
   cd tmp

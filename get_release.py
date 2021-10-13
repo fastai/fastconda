@@ -12,14 +12,13 @@ def latest_conda(achan:str='', apkg:str=None):
 @call_parse
 def get_pypi_source(
         pypinm:str,
-        dest:str = None, # Name of directory to place files in
         achan:str = '', # Anaconda Channels
         apkg:str = None, # Anaconda Package
         force:store_true = False): # Return the github tag no matter what
     "Download latest source from pypi and untars to `dest` if a newer release exists on Pypi compared to an Anaconda Repo."
-    dest = ifnone(dest,pypinm)
     pypi_ver,url,_ = pypi_details(pypinm)
     conda_ver = latest_conda(achan=achan, apkg=ifnone(apkg, pypinm))
     if force or not conda_ver or version.parse(pypi_ver) > conda_ver:
-        with urlopen(url) as f: untar_dir(f, dest)
+        urlsave(url, 'tmp.tgz')
+        untar_dir('tmp.tgz', Path(), True)
 
