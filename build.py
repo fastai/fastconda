@@ -61,12 +61,10 @@ class CondaBuild:
 
 @call_parse  
 def main(
-    # Path to build file
-    path:str='build.yaml',
-    # Extra args to pass to `build`
-    args:str='',
-    # If supplied, only process this package name
-    pypinm:str=None): 
+    path:str='build.yaml',  # Path to build file
+    args:str='',  # Extra args to pass to `build`
+    pypinm:str=None  # If supplied, only process this package name
+): 
     cb = CondaBuild.from_yaml(path)
     if pypinm: cb = cb.filter(lambda x: x.pypinm == pypinm)
     for c in cb:
