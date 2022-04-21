@@ -23,7 +23,8 @@ jobs:
       - name: Install dependencies
         run: |
           conda install -yq -c conda-forge mamba
-          mamba install -yq anaconda-client conda-build fastrelease setuptools-conda
+          mamba install -yq -c fastai setuptools-conda
+          mamba install -yq anaconda-client conda-build fastrelease
       - name: Build and Publish
         run: |
           ./setupconda.sh accelerate '--conda-name-differences torch:pytorch -c pytorch --noarch .'
