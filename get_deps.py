@@ -30,7 +30,7 @@ if __name__=='__main__':
         "-c huggingface -c pytorch -c nvidia -c defaults -c conda-forge transformers datasets accelerate",
         "sentencepiece 'spacy>=3.1' fastai timm",
         "nbdev fastrelease ghapi fastcgi",
-        "-c fastai -c defaults --override-channels albumentations",
+        # "-c fastai -c defaults --override-channels albumentations",
         "-c cbillington -c defaults setuptools-conda"
     ).map(inst).concat()
 
