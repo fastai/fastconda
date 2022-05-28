@@ -22,15 +22,16 @@ jobs:
     runs-on: ${{ matrix.os }}-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: conda-incubator/setup-miniconda@master
+      - uses: conda-incubator/setup-miniconda@v2
         with:
           python-version: ${{ matrix.py }}
           channels: fastai,defaults,conda-forge
           miniforge-version: latest
+          miniforge-variant: Mambaforge
       - name: install deps
         run: |
-          conda install -yq libiconv
-          conda install -yq mamba
+          #conda install -yq libiconv
+          #conda install -yq mamba
           mamba install -yq boa anaconda-client conda-build ghapi fastrelease 
       - name: build
         run: python build.py --pypinm ${{ matrix.nm }}
