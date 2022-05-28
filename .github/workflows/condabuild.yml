@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: ${{ matrix.py }}
           channels: fastai,defaults,conda-forge
-          miniforge-version: latest
+          #miniforge-version: latest
           #miniforge-variant: Mambaforge
       - name: install deps
         run: |
