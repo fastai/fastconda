@@ -15,7 +15,7 @@ jobs:
       fail-fast: false
       matrix:
         py: [3.7, 3.8, 3.9]
-        os: [ubuntu, macos]
+        os: [ubuntu] #, macos]
     runs-on: ${{ matrix.os }}-latest
     steps:
       - uses: conda-incubator/setup-miniconda@master
