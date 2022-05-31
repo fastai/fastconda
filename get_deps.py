@@ -29,7 +29,7 @@ if __name__=='__main__':
     links += L(
         f"{chans} mamba boa rich anaconda-client",
         f"{chans} 'pytorch>=1.7' torchaudio 'torchvision>0.7' pynvml",
-        f"{chans} transformers datasets accelerate",
+        f"{chans} 'transformers>4.12' datasets accelerate",
         f"{chans} sentencepiece 'spacy>=3.1' fastai timm",
         f"{chans} nbdev fastrelease ghapi fastcgi fastbook",
         f"{chans} albumentations",
