@@ -21,8 +21,9 @@ jobs:
       - uses: conda-incubator/setup-miniconda@master
         with:
           python-version: ${{ matrix.py }}
-          channels: pytorch,fastai,defaults,conda-forge
-          channel-priority: true
+          channels: fastai,conda-forge
+          miniforge-variant: Mambaforge
+          #channel-priority: true
       - uses: actions/checkout@v2
       - run: pip install -Uq fastcore
       - run: python get_deps.py
