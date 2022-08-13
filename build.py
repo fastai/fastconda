@@ -2,7 +2,7 @@
 from pathlib import Path
 import yaml
 from ghapi.actions import *
-from fastrelease.conda import latest_pypi, pypi_json, anaconda_upload
+from nbdev.release import latest_pypi, pypi_json, anaconda_upload
 from fastcore.all import ifnone, patch, store_attr , compose, L, call_parse, Param, run
 
 
