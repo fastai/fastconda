@@ -33,8 +33,8 @@ if __name__=='__main__':
         f"{chans} sentencepiece 'spacy>=3.1' fastai timm",
         f"{chans} nbdev fastrelease ghapi fastcgi fastbook",
         f"{chans} albumentations",
-        f"{chans} setuptools-conda"
-        # "-c cbillington -c defaults setuptools-conda"
+        # f"{chans} setuptools-conda"
+        # "-c labscript-suite -c defaults setuptools-conda"
     ).map(inst).concat()
 
     nms = L(f'{o.channel}/{o.name}/{o.version}' for o in links if o.channel != 'pkgs/main')
