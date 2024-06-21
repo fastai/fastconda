@@ -29,5 +29,5 @@ jobs:
         run: |
           ./setupconda.sh accelerate '--conda-name-differences torch:pytorch -c pytorch --noarch .'
           ./setupconda.sh timm '--conda-name-differences torch:pytorch -c pytorch --noarch .'
-          ./setupconda.sh albumentations '--conda-name-differences opencv-python:opencv-python-headless,opencv-contrib-python:opencv-python-headless,opencv:opencv-python-headless --noarch .'
+          #./setupconda.sh albumentations '--conda-name-differences opencv-python:opencv-python-headless,opencv-contrib-python:opencv-python-headless,opencv:opencv-python-headless --noarch .'
           ./setupconda.sh imgaug '--conda-name-differences opencv-python:opencv-python-headless,opencv-contrib-python:opencv-python-headless,opencv:opencv-python-headless --noarch .'
